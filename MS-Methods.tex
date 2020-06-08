@@ -1,0 +1,68 @@
+\section{Materials and methods} \label{methods}
+
+\subsection*{Data}
+
+Data on human variants was sampled from Ensembl release 89 (for influence of context) and release 92 (for influence of recombination) variation databases \citep{Cunningham2015} using the query capabilities of ensembldb3 \citep{hutt_ensdb3}. Variants were restricted to those identified by the 1000 Genomes (1KG) Project \citep{Auton2015}, but without restriction by source population. We did not analyze sex chromosomes, as structural differences from autosomes in mutation rate, recombination rate and effective population size mean that results from autosomes and sex chromosomes cannot meaningfully be aggregated.
+
+deCODE provides estimated recombination rates averaged over 10-kilobase (kb) blocks. The files female\_noncarrier.rmap, male\_noncarrier.rmap and sex-averaged\_noncarrier.rmap were downloaded from  \url{https://www.decode.com/addendum/} \citep{Kong_2010}. These correspond to female, male and sex-averaged standardized recombination rates respectively. The proportion of the human genome covered by the deCODE estimates is given at \citet[][Supplementary Table 2]{Kong_2010}. The hg18 genome coordinates were mapped to GRCh38 using pyliftover, a Python implementation of UCSC LiftOver \citep{tretyakov_pylift}.
+
+\subsection*{Variance in probability of polymorphism due to recombination.}
+
+In order to estimate variance in the probability of polymorphism that can be explained by recombination or by sequence neighbourhood, we employ the SNV density as a surrogate. Counts of SNVs within the 10-kb blocks defined by deCODE were determined from the Ensembl variation database records. We excluded blocks where no SNVs were reported in Ensembl; blocks that were identified by deCODE as overlapping unsequenced regions; and blocks adjacent to these. The  portions excluded in this way did not exceed 5\% of any chromosome.
+
+The relationship between recombination rate and SNV density may be confounded by spatial auto-correlation of these quantities along the genome. The impact of auto-correlation on the residuals of a linear model was confirmed by plotting the covariances of the residuals for blocks separated by up to 50 blocks using statsmodels \citep{seabold2010statsmodels} (Figure \ref{fig:autocorrelation}). Allowing for auto-correlation in our model requires maintaining the lags between the 10-kb blocks and thus it was necessary to adjust regions with missing data. This was done using the Last Observation Carried Forward (LOCF) method \citep[][p. 38]{molenberghs2014handbook}. That is, for successive blocks excluded by our missing data criteria, SNV and recombination data from the immediate 5' neighbour block were repeated. 
+
+Selection of the appropriate time-series model for the residuals depends on whether their distribution is stationary. The statsmodels \citep{seabold2010statsmodels} implementation of the augmented Dickey-Fuller test \citep[][p. 79]{mills2008econometric} was used to demonstrate stationarity of the residuals. (See also Figure \ref{fig:residuals}.) Stationarity allows us to apply Wold's decomposition theorem \citep[][p. 12]{mills2008econometric} to conclude that the residuals can be approximated by an auto-regressive moving average (ARMA) model of some order $(p,q)$ where $p$ and $q$ are non-negative integers and $p>0$. Optimal values of $p$ and $q$ were chosen by evaluating models for $p\leq 10$ and $q\leq 4$ using the statsmodels \citep{seabold2010statsmodels} ARMA implementation to find which had the lowest value of the Akaike Information Criterion (AIC). (In the case of chromosome 9, the model with the second lowest AIC was used, as the lowest model confounded the subsequent Markov Chain Monte Carlo step.)
+
+A Bayesian Markov Chain Monte Carlo (MCMC) approach implemented in the software package PyMC3 \citep{salvatier2016probabilistic} was used to simultaneously estimate the slope, intercept and $p+q$ ARMA parameters. This was developed to provide a more robust approach than iterative adjustment of the parameters \citep{mizon1995simple} as is undertaken with, for example, the Cochrane-Orcutt procedure. The intercept $\alpha$ obtained from this process represents the model's prediction of SNV density for genomic segments with a recombination rate of zero. Therefore, given the average SNV density $\bar m$, we can estimate the proportion of SNVs caused by recombination as $\hat{\rho } =\frac{\bar m-\alpha}{\bar m}$. Under a neutral model, for a realistically small mutation rate, the probability of an SNV at a site is some fixed multiple of the mutation rate at the site over the whole genome \citep{Hodgkinson2009}. Therefore $\hat{\rho }$ is also the proportion of mutations caused by recombination. Then if $x$ is the number of mutations that occur in 1 Mb of DNA sequence in a specific generation and $y$ is the number of recombination events occurring in that sequence in the same generation, $\hat{\rho } x$ is the expected number of new mutations in that segment caused by recombination. Since they must be caused by recombination events occurring in that generation, the expected number of mutation events per recombination event is $\hat{\rho }\frac{x}{y}$. Therefore multiplying $\hat{\rho }$ by the ratio of mutations per generation to recombination events per generation gives the average number of mutations produced by each recombination event. The estimated variance in SNV density due to recombination ($\hat{\sigma }^2_{rec}$) is calculated as the difference between the total variance in SNV density and the sum of squares of the residuals. The ratio of this quantity to total variance in SNV rate is the proportion of variance in SNV rate attributable to recombination ($R^2$).
+
+Our model does not take account of error in the estimation of recombination rates in the blocks. To determine the impact of this, we tried adding a normal perturbation of the recombination rates to the model. This made little difference to the posterior distribution, which we hypothesize is due to averaging the recombination rates over a large number of blocks.
+
+\subsection*{The variance in SNV density conditioned on context} \label{the-variance-in-probability-of-polymorphism}
+We estimated the probability of polymorphism for all point mutation directions from all sequence contexts of size $k$ that contained a central point mutation. The mean and variance can be obtained from these in a straightforward manner. The variance conditioned on different central bases or different point mutation directions can be measured by filtering the appropriate subset of the data. We now expand on our model and approach to estimation of the variance.
+
+We denote by $\mathbb{C}_k(\cdot a \cdot)$ the set of $4^{k-1}$ sequence contexts with central base $a \in \{A,C,G,T\}$. The union, $\mathbb{C}_k$, of the four such sets contains the $4^k$ distinct $k$-mer sequences. As we are concerned with neighbourhoods centered on a mutating base, $k$ is an odd numbered integer with values of 3, 5, 7 or above.
+
+For a sequence $S$, our model assigns to each site a fixed probability $m$ of being polymorphic for an SNV and assumes that the mutation events for different sites occur independently (see Assumptions below). It is the variability of $m$ that can be explained by context that is the object of the analysis.
+
+For a context $c$, let $p_c$ be the proportion of sites in $S$ matching it. We denote by $m_c$ the probability that a randomly selected site matching the context $c$ will have a SNV at the central base.  Then $m_c$ is the average SNV probability over the sites with context $c$.  
+We denote by $\bar{m}$ the average SNV probability
+over the entire sequence. For any $k$ we have:
+
+$$\bar{m} = \sum_{c \in \mathbb{C}_k} p_c m_c$$
+
+\noindent Then the total variance in SNV density accounted for by sequence neighbourhoods of size  $k$ is:
+
+$$\sigma^2_k = \sum_{c \in \mathbb{C}_k} p_c {(m_c - \bar{m})}^2 $$
+
+\noindent This total variance can be partitioned into components consisting of variance attributable to each point mutation $a \rightarrow b$ as
+
+\begin{align} \label{eq:mm1}
+\sigma^2_k (a \rightarrow b) = \sum_{c \in \mathbb{C}_k(\cdot a \cdot)} p_{c(a)} {(m_{c,a \rightarrow b} - \bar{m}_a)}^2
+\end{align}
+
+\noindent where $p_{c(a)}$ is the proportion of sites with base $a$ whose context matches $c$; $m_{c,a\rightarrow b}$ is the probability of polymorphism arising from mutation of base $a$ to base $b$ in context $c$; and $\bar{m}_a$ is the probability that a site with base $a$ will have an SNV.
+
+We consider the proportion of contexts $p_c$ (and $p_{c(a)}$) as a fixed or known quantity, as contexts can be counted exactly with reasonable efficiency. We then estimate the values $m_c$ by $\hat{m}_c$, the empirical SNV density in context $c$ \citep[cf.][]{aikens2019signals}. The estimated value of $\sigma^2_k$ is then given by:
+
+$$\hat{\sigma}^2_k = \sum_{c \in \mathbb{C}_k}p_c{(\hat{m}_c- \hat{m})}^2$$
+
+\noindent where $\hat{m}$ is the empirical SNV density for the entire sequence. A similar equation applies if we condition on a specific point mutation direction $a\rightarrow b$. For instance, we can further condition on C sites with 5' G and G sites with 3' C in order to isolate the CpG effect.
+
+\subsubsection*{Assumptions}\label{assumptions}
+
+Some of the assumptions made in the above model may be invalid in practice. We deal with this by filtering these conflicting cases from the data, as follows.
+
+We have assumed that each site has a fixed probability of being polymorphic and that the resultant Bernoulli distributions are independent between sites. These assumptions fail if a site mutates more than once, since we allow the nucleotide to influence mutation rate. It similarly fails if a neighbouring site mutates, since we allow context to influence mutation. We therefore only include those SNVs in our data set which are biallelic, with one allele being the ancestral allele; and for which there are no variants in the immediate neighbourhood (4 bp on either side). (It is recognized that this does not eliminate the case in which subsequent mutations have occurred within the context and achieved fixation ).
+
+\subsubsection*{Bayesian model for estimation of variance due to context}
+
+We use Bayesian conjugate priors to derive a posterior distribution for each instance of mutation direction within a particular context (e.g. ACT\textrightarrow ATT mutation in the case of 3-mers). For each such case we have a count of $k$-mers (number of ``trials'') and a count of variants at the central base of the $k$-mer (number of ``successes''). The probability of polymorphism is given by estimating the probability parameter of a binomial distribution on these quantities. The conjugate prior for the binomial distribution is the beta distribution, so we use a Beta(1,1) distribution as a prior. We thus derive a posterior beta distribution for the mutation rate for the cell. We generate samples of the posterior distribution for the variance due to context by generating samples for the probability of polymorphism for each cell from the beta distributions and applying the right hand side of equation (\ref{eq:mm1}) to the samples to generate samples for the weighted variance. 
+
+This method requires that the number of mutation type and context pairs having no variants in the data is small. For such cells the posterior distribution on mutation rate would be Beta(1,1), the uniform distribution on [0, 1] and hence the variance in mutation rates would be inflated.
+
+\subsection*{Data availability statement}
+The authors state that all data necessary for confirming the conclusions presented in the article are represented fully
+within the article. Supplementary figures and tables are available at Zenodo \url{https://zenodo.org/record/3875814}.
+The preprocessed data used in this study are available at Zenodo \url{https://zenodo.org/record/3874290} under the
+Creative Commons Attribution-Share Alike license. Larger data files are typically gzip compressed. Scripts and Jupyter notebooks developed specifically to perform the data sampling and analyses reported in this work were written in Python version $\ge$3.5 and are freely available under the GPL at \url{https://github.com/helmutsimon/ProbPolymorphism} and at \url{https://zenodo.org/record/3875855}.

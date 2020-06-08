@@ -1,0 +1,3527 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%XpdfVersion: 4.02
+%%Creator: matplotlib 3.0.3, http://matplotlib.org
+%%Title: Heatmap for influence of recombination - (sex-averaged)
+%%LanguageLevel: 2
+%%DocumentSuppliedResources: (atend)
+%%BoundingBox: 0 0 432 288
+%%EndComments
+%%BeginProlog
+%%BeginResource: procset xpdf 4.02 0
+%%Copyright: Copyright 1996-2019 Glyph & Cog, LLC
+/xpdf 75 dict def xpdf begin
+% PDF special state
+/pdfDictSize 15 def
+/bdef { bind def } bind def
+/pdfSetup {
+  /pdfDuplex exch def
+  /setpagedevice where {
+    pop 2 dict begin
+      /Policies 1 dict dup begin /PageSize 6 def end def
+      pdfDuplex { /Duplex true def } if
+    currentdict end setpagedevice
+  } if
+  /pdfPageW 0 def
+  /pdfPageH 0 def
+} def
+/pdfSetupPaper {
+  2 copy pdfPageH ne exch pdfPageW ne or {
+    /pdfPageH exch def
+    /pdfPageW exch def
+    /setpagedevice where {
+      pop 3 dict begin
+        /PageSize [pdfPageW pdfPageH] def
+        pdfDuplex { /Duplex true def } if
+        /ImagingBBox null def
+      currentdict end setpagedevice
+    } if
+  } {
+    pop pop
+  } ifelse
+} def
+/pdfStartPage {
+  pdfDictSize dict begin
+  /pdfFillCS [] def
+  /pdfFillXform {} def
+  /pdfStrokeCS [] def
+  /pdfStrokeXform {} def
+  /pdfFill [0] def
+  /pdfStroke [0] def
+  /pdfFillOP false def
+  /pdfStrokeOP false def
+  /pdfLastFill false def
+  /pdfLastStroke false def
+  /pdfTextMat [1 0 0 1 0 0] def
+  /pdfFontSize 0 def
+  /pdfCharSpacing 0 def
+  /pdfTextRender 0 def
+  /pdfTextRise 0 def
+  /pdfWordSpacing 0 def
+  /pdfHorizScaling 1 def
+  /pdfTextClipPath [] def
+} def
+/pdfEndPage { end } def
+% PDF color state
+/cs { /pdfFillXform exch def dup /pdfFillCS exch def
+      setcolorspace } def
+/CS { /pdfStrokeXform exch def dup /pdfStrokeCS exch def
+      setcolorspace } def
+/sc { pdfLastFill not {
+        pdfFillCS setcolorspace pdfFillOP setoverprint
+      } if
+      dup /pdfFill exch def aload pop pdfFillXform setcolor
+      /pdfLastFill true def /pdfLastStroke false def } def
+/SC { pdfLastStroke not {
+        pdfStrokeCS setcolorspace pdfStrokeOP setoverprint
+      } if
+      dup /pdfStroke exch def aload pop pdfStrokeXform setcolor
+      /pdfLastStroke true def /pdfLastFill false def } def
+/op { /pdfFillOP exch def
+      pdfLastFill { pdfFillOP setoverprint } if } def
+/OP { /pdfStrokeOP exch def
+      pdfLastStroke { pdfStrokeOP setoverprint } if } def
+/fCol {
+  pdfLastFill not {
+    pdfFillCS setcolorspace
+    pdfFill aload pop pdfFillXform setcolor
+    pdfFillOP setoverprint
+    /pdfLastFill true def /pdfLastStroke false def
+  } if
+} def
+/sCol {
+  pdfLastStroke not {
+    pdfStrokeCS setcolorspace
+    pdfStroke aload pop pdfStrokeXform setcolor
+    pdfStrokeOP setoverprint
+    /pdfLastStroke true def /pdfLastFill false def
+  } if
+} def
+% build a font
+/pdfMakeFont {
+  4 3 roll findfont
+  4 2 roll matrix scale makefont
+  dup length dict begin
+    { 1 index /FID ne { def } { pop pop } ifelse } forall
+    /Encoding exch def
+    currentdict
+  end
+  definefont pop
+} def
+/pdfMakeFont16 {
+  exch findfont
+  dup length dict begin
+    { 1 index /FID ne { def } { pop pop } ifelse } forall
+    /WMode exch def
+    currentdict
+  end
+  definefont pop
+} def
+% graphics state operators
+/q { gsave pdfDictSize dict begin } def
+/Q {
+  end grestore
+} def
+/cm { concat } def
+/d { setdash } def
+/i { setflat } def
+/j { setlinejoin } def
+/J { setlinecap } def
+/M { setmiterlimit } def
+/w { setlinewidth } def
+% path segment operators
+/m { moveto } def
+/l { lineto } def
+/c { curveto } def
+/re { 4 2 roll moveto 1 index 0 rlineto 0 exch rlineto
+      neg 0 rlineto closepath } def
+/h { closepath } def
+% path painting operators
+/S { sCol stroke } def
+/Sf { fCol stroke } def
+/f { fCol fill } def
+/f* { fCol eofill } def
+% clipping operators
+/W { clip newpath } bdef
+/W* { eoclip newpath } bdef
+/Ws { strokepath clip newpath } bdef
+% text state operators
+/Tc { /pdfCharSpacing exch def } def
+/Tf { dup /pdfFontSize exch def
+      dup pdfHorizScaling mul exch matrix scale
+      pdfTextMat matrix concatmatrix dup 4 0 put dup 5 0 put
+      exch findfont exch makefont setfont } def
+/Tr { /pdfTextRender exch def } def
+/Ts { /pdfTextRise exch def } def
+/Tw { /pdfWordSpacing exch def } def
+/Tz { /pdfHorizScaling exch def } def
+% text positioning operators
+/Td { pdfTextMat transform moveto } def
+/Tm { /pdfTextMat exch def } def
+% text string operators
+/xyshow where {
+  pop
+  /xyshow2 {
+    dup length array
+    0 2 2 index length 1 sub {
+      2 index 1 index 2 copy get 3 1 roll 1 add get
+      pdfTextMat dtransform
+      4 2 roll 2 copy 6 5 roll put 1 add 3 1 roll dup 4 2 roll put
+    } for
+    exch pop
+    xyshow
+  } def
+}{
+  /xyshow2 {
+    currentfont /FontType get 0 eq {
+      0 2 3 index length 1 sub {
+        currentpoint 4 index 3 index 2 getinterval show moveto
+        2 copy get 2 index 3 2 roll 1 add get
+        pdfTextMat dtransform rmoveto
+      } for
+    } {
+      0 1 3 index length 1 sub {
+        currentpoint 4 index 3 index 1 getinterval show moveto
+        2 copy 2 mul get 2 index 3 2 roll 2 mul 1 add get
+        pdfTextMat dtransform rmoveto
+      } for
+    } ifelse
+    pop pop
+  } def
+} ifelse
+/cshow where {
+  pop
+  /xycp {
+    0 3 2 roll
+    {
+      pop pop currentpoint 3 2 roll
+      1 string dup 0 4 3 roll put false charpath moveto
+      2 copy get 2 index 2 index 1 add get
+      pdfTextMat dtransform rmoveto
+      2 add
+    } exch cshow
+    pop pop
+  } def
+}{
+  /xycp {
+    currentfont /FontType get 0 eq {
+      0 2 3 index length 1 sub {
+        currentpoint 4 index 3 index 2 getinterval false charpath moveto
+        2 copy get 2 index 3 2 roll 1 add get
+        pdfTextMat dtransform rmoveto
+      } for
+    } {
+      0 1 3 index length 1 sub {
+        currentpoint 4 index 3 index 1 getinterval false charpath moveto
+        2 copy 2 mul get 2 index 3 2 roll 2 mul 1 add get
+        pdfTextMat dtransform rmoveto
+      } for
+    } ifelse
+    pop pop
+  } def
+} ifelse
+/Tj {
+  fCol
+  0 pdfTextRise pdfTextMat dtransform rmoveto
+  currentpoint 4 2 roll
+  pdfTextRender 1 and 0 eq {
+    2 copy xyshow2
+  } if
+  pdfTextRender 3 and dup 1 eq exch 2 eq or {
+    3 index 3 index moveto
+    2 copy
+    currentfont /FontType get 3 eq { fCol } { sCol } ifelse
+    xycp currentpoint stroke moveto
+  } if
+  pdfTextRender 4 and 0 ne {
+    4 2 roll moveto xycp
+    /pdfTextClipPath [ pdfTextClipPath aload pop
+      {/moveto cvx}
+      {/lineto cvx}
+      {/curveto cvx}
+      {/closepath cvx}
+    pathforall ] def
+    currentpoint newpath moveto
+  } {
+    pop pop pop pop
+  } ifelse
+  0 pdfTextRise neg pdfTextMat dtransform rmoveto
+} def
+/Tj3 {
+  pdfTextRender 3 and 3 ne {    fCol
+    0 pdfTextRise pdfTextMat dtransform rmoveto
+    xyshow2
+    0 pdfTextRise neg pdfTextMat dtransform rmoveto
+  } {
+    pop pop
+  } ifelse
+} def
+/TJm { 0.001 mul pdfFontSize mul pdfHorizScaling mul neg 0
+       pdfTextMat dtransform rmoveto } def
+/TJmV { 0.001 mul pdfFontSize mul neg 0 exch
+        pdfTextMat dtransform rmoveto } def
+/Tclip { pdfTextClipPath cvx exec clip newpath
+         /pdfTextClipPath [] def } def
+% Level 2/3 image operators
+/pdfImBuf 100 string def
+/pdfImStr {
+  2 copy exch length lt {
+    2 copy get exch 1 add exch
+  } {
+    ()
+  } ifelse
+} def
+/skipEOD {
+  { currentfile pdfImBuf readline
+    not { pop exit } if
+    (%-EOD-) eq { exit } if } loop
+} def
+/pdfIm { image skipEOD } def
+/pdfImM { fCol imagemask skipEOD } def
+/pr {
+  4 2 roll exch 5 index div exch 4 index div moveto
+  exch 3 index div dup 0 rlineto
+  exch 2 index div 0 exch rlineto
+  neg 0 rlineto
+  closepath
+} def
+/pdfImClip { gsave clip } def
+/pdfImClipEnd { grestore } def
+% shading operators
+/colordelta {
+  false 0 1 3 index length 1 sub {
+    dup 4 index exch get 3 index 3 2 roll get sub abs 0.004 gt {
+      pop true
+    } if
+  } for
+  exch pop exch pop
+} def
+/funcCol { func n array astore } def
+/funcSH {
+  dup 0 eq {
+    true
+  } {
+    dup 6 eq {
+      false
+    } {
+      4 index 4 index funcCol dup
+      6 index 4 index funcCol dup
+      3 1 roll colordelta 3 1 roll
+      5 index 5 index funcCol dup
+      3 1 roll colordelta 3 1 roll
+      6 index 8 index funcCol dup
+      3 1 roll colordelta 3 1 roll
+      colordelta or or or
+    } ifelse
+  } ifelse
+  {
+    1 add
+    4 index 3 index add 0.5 mul exch 4 index 3 index add 0.5 mul exch
+    6 index 6 index 4 index 4 index 4 index funcSH
+    2 index 6 index 6 index 4 index 4 index funcSH
+    6 index 2 index 4 index 6 index 4 index funcSH
+    5 3 roll 3 2 roll funcSH pop pop
+  } {
+    pop 3 index 2 index add 0.5 mul 3 index  2 index add 0.5 mul
+    funcCol sc
+    dup 4 index exch mat transform m
+    3 index 3 index mat transform l
+    1 index 3 index mat transform l
+    mat transform l pop pop h f*
+  } ifelse
+} def
+/axialCol {
+  dup 0 lt {
+    pop t0
+  } {
+    dup 1 gt {
+      pop t1
+    } {
+      dt mul t0 add
+    } ifelse
+  } ifelse
+  func n array astore
+} def
+/axialSH {
+  dup 2 lt {
+    true
+  } {
+    dup 8 eq {
+      false
+    } {
+      2 index axialCol 2 index axialCol colordelta
+    } ifelse
+  } ifelse
+  {
+    1 add 3 1 roll 2 copy add 0.5 mul
+    dup 4 3 roll exch 4 index axialSH
+    exch 3 2 roll axialSH
+  } {
+    pop 2 copy add 0.5 mul
+    axialCol sc
+    exch dup dx mul x0 add exch dy mul y0 add
+    3 2 roll dup dx mul x0 add exch dy mul y0 add
+    dx abs dy abs ge {
+      2 copy yMin sub dy mul dx div add yMin m
+      yMax sub dy mul dx div add yMax l
+      2 copy yMax sub dy mul dx div add yMax l
+      yMin sub dy mul dx div add yMin l
+      h f*
+    } {
+      exch 2 copy xMin sub dx mul dy div add xMin exch m
+      xMax sub dx mul dy div add xMax exch l
+      exch 2 copy xMax sub dx mul dy div add xMax exch l
+      xMin sub dx mul dy div add xMin exch l
+      h f*
+    } ifelse
+  } ifelse
+} def
+/radialCol {
+  dup t0 lt {
+    pop t0
+  } {
+    dup t1 gt {
+      pop t1
+    } if
+  } ifelse
+  func n array astore
+} def
+/radialSH {
+  dup 0 eq {
+    true
+  } {
+    dup 8 eq {
+      false
+    } {
+      2 index dt mul t0 add radialCol
+      2 index dt mul t0 add radialCol colordelta
+    } ifelse
+  } ifelse
+  {
+    1 add 3 1 roll 2 copy add 0.5 mul
+    dup 4 3 roll exch 4 index radialSH
+    exch 3 2 roll radialSH
+  } {
+    pop 2 copy add 0.5 mul dt mul t0 add
+    radialCol sc
+    encl {
+      exch dup dx mul x0 add exch dup dy mul y0 add exch dr mul r0 add
+      0 360 arc h
+      dup dx mul x0 add exch dup dy mul y0 add exch dr mul r0 add
+      360 0 arcn h f
+    } {
+      2 copy
+      dup dx mul x0 add exch dup dy mul y0 add exch dr mul r0 add
+      a1 a2 arcn
+      dup dx mul x0 add exch dup dy mul y0 add exch dr mul r0 add
+      a2 a1 arcn h
+      dup dx mul x0 add exch dup dy mul y0 add exch dr mul r0 add
+      a1 a2 arc
+      dup dx mul x0 add exch dup dy mul y0 add exch dr mul r0 add
+      a2 a1 arc h f
+    } ifelse
+  } ifelse
+} def
+end
+%%EndResource
+%%EndProlog
+%%BeginSetup
+xpdf begin
+%%BeginResource: font T3_15_0
+8 dict begin
+/FontType 3 def
+/FontMatrix [0.001 0 0 0.001 0 0] def
+/FontBBox [-665 -325 2000 1006] def
+/Encoding 256 array def
+  0 1 255 { Encoding exch /.notdef put } for
+/BuildGlyph {
+  exch /CharProcs get exch
+  2 copy known not { pop /.notdef } if
+  get exec
+} bind def
+/BuildChar {
+  1 index /Encoding get exch get
+  1 index /BuildGlyph get exec
+} bind def
+/CharProcs 34 dict def
+CharProcs begin
+/A {
+667 0 0 0 668 716 setcachedevice
+q
+0 0 m
+273 716 l
+375 716 l
+668 0 l
+561 0 l
+477 217 l
+178 217 l
+99 0 l
+0 0 l
+205 294 m
+448 294 l
+373 492 l
+350 552 333 602 322 641 c
+313 595 300 549 284 504 c
+205 294 l
+f
+Q
+} def
+/C {
+722 0 50 -11 683 728 setcachedevice
+q
+588 251 m
+683 227 l
+663 149 627 89 575 49 c
+523 9 460 -11 386 -11 c
+309 -11 246 4 198 35 c
+149 66 112 111 87 171 c
+62 231 50 295 50 363 c
+50 437 64 502 92 558 c
+120 614 161 656 214 685 c
+266 713 324 728 388 728 c
+459 728 519 709 568 673 c
+617 637 651 586 670 520 c
+577 498 l
+560 550 536 587 505 611 c
+473 635 434 647 386 647 c
+330 647 284 633 247 607 c
+210 581 184 545 169 501 c
+154 457 147 411 147 364 c
+147 302 156 249 174 204 c
+192 158 219 124 257 102 c
+294 80 334 69 378 69 c
+431 69 476 84 513 115 c
+549 145 574 191 588 251 c
+f
+Q
+} def
+/G {
+778 0 53 -11 715 728 setcachedevice
+q
+412 281 m
+412 365 l
+715 365 l
+715 100 l
+669 62 621 34 571 16 c
+521 -2 471 -11 419 -11 c
+348 -11 284 3 227 33 c
+169 63 126 106 97 163 c
+67 220 53 284 53 354 c
+53 424 67 489 97 549 c
+126 609 168 654 223 684 c
+277 713 340 728 412 728 c
+463 728 510 719 552 703 c
+594 686 626 663 650 633 c
+674 603 692 564 705 516 c
+619 492 l
+608 528 595 557 579 578 c
+563 598 540 615 510 628 c
+480 640 448 647 412 647 c
+368 647 331 640 299 627 c
+267 613 242 596 223 575 c
+203 553 188 530 178 504 c
+160 460 151 412 151 360 c
+151 296 162 243 184 200 c
+206 157 238 125 280 104 c
+322 83 366 73 414 73 c
+454 73 494 81 533 97 c
+572 113 602 129 623 147 c
+623 281 l
+412 281 l
+f
+Q
+} def
+/M {
+833 0 74 0 757 716 setcachedevice
+q
+74 0 m
+74 716 l
+217 716 l
+386 209 l
+402 161 413 126 420 103 c
+428 129 441 167 458 218 c
+630 716 l
+757 716 l
+757 0 l
+666 0 l
+666 599 l
+458 0 l
+373 0 l
+166 609 l
+166 0 l
+74 0 l
+f
+Q
+} def
+/P {
+667 0 77 0 624 716 setcachedevice
+q
+77 0 m
+77 716 l
+347 716 l
+394 716 430 713 456 709 c
+491 703 520 691 544 675 c
+568 659 587 636 602 606 c
+616 576 624 544 624 509 c
+624 447 604 396 565 354 c
+526 312 456 291 355 291 c
+172 291 l
+172 0 l
+77 0 l
+172 375 m
+357 375 l
+418 375 461 386 487 409 c
+513 432 526 464 526 506 c
+526 536 518 561 503 583 c
+487 604 467 618 443 625 c
+427 629 397 631 355 631 c
+172 631 l
+172 375 l
+f
+Q
+} def
+/T {
+611 0 23 0 591 716 setcachedevice
+q
+259 0 m
+259 631 l
+23 631 l
+23 716 l
+591 716 l
+591 631 l
+354 631 l
+354 0 l
+259 0 l
+f
+Q
+} def
+/a {
+556 0 36 -11 514 530 setcachedevice
+q
+404 64 m
+371 36 340 16 310 5 c
+280 -5 247 -11 213 -11 c
+156 -11 112 2 82 30 c
+51 58 36 93 36 137 c
+36 162 41 185 53 206 c
+65 227 80 244 99 257 c
+117 269 138 279 162 286 c
+179 290 205 294 240 299 c
+311 307 363 317 397 329 c
+397 341 397 348 397 352 c
+397 388 389 413 373 428 c
+350 448 316 458 272 458 c
+230 458 200 450 180 436 c
+160 421 146 395 137 359 c
+51 371 l
+59 407 72 437 90 460 c
+108 482 133 500 167 512 c
+201 524 240 530 285 530 c
+329 530 365 524 393 514 c
+421 504 441 491 454 475 c
+467 459 476 440 481 416 c
+484 400 486 373 486 334 c
+486 217 l
+486 135 487 84 491 62 c
+495 40 502 20 514 0 c
+422 0 l
+412 18 406 39 404 64 c
+397 260 m
+365 247 317 236 253 227 c
+217 221 191 215 176 209 c
+161 203 150 193 142 181 c
+134 168 130 154 130 139 c
+130 115 138 96 156 80 c
+174 64 200 57 234 57 c
+268 57 298 64 324 79 c
+350 94 370 114 383 140 c
+392 160 397 189 397 228 c
+397 260 l
+f
+Q
+} def
+/b {
+556 0 65 -11 515 716 setcachedevice
+q
+147 0 m
+65 0 l
+65 716 l
+153 716 l
+153 460 l
+190 506 237 530 295 530 c
+327 530 357 523 386 511 c
+414 498 438 480 456 457 c
+474 433 489 405 499 372 c
+509 339 515 304 515 267 c
+515 178 493 109 449 61 c
+405 13 352 -11 291 -11 c
+229 -11 181 14 147 65 c
+147 0 l
+146 263 m
+146 201 154 156 171 128 c
+199 83 236 61 284 61 c
+322 61 355 77 383 111 c
+411 144 425 194 425 260 c
+425 327 411 377 385 409 c
+358 441 326 458 288 458 c
+249 458 216 441 188 408 c
+160 374 146 326 146 263 c
+f
+Q
+} def
+/c {
+500 0 39 -11 491 530 setcachedevice
+q
+404 190 m
+491 179 l
+481 119 457 72 418 39 c
+379 5 331 -11 275 -11 c
+203 -11 146 12 103 58 c
+60 104 39 170 39 257 c
+39 313 48 362 67 404 c
+85 446 113 477 151 498 c
+189 519 230 530 275 530 c
+331 530 377 515 413 487 c
+449 459 472 418 482 366 c
+397 353 l
+389 387 374 413 354 431 c
+333 449 308 458 279 458 c
+234 458 198 442 170 410 c
+142 378 129 328 129 260 c
+129 190 142 139 169 108 c
+195 76 230 61 274 61 c
+308 61 337 71 360 92 c
+383 113 398 146 404 190 c
+f
+Q
+} def
+/d {
+556 0 34 -11 484 716 setcachedevice
+q
+402 0 m
+402 65 l
+369 14 321 -11 257 -11 c
+215 -11 177 0 143 23 c
+108 45 81 77 62 118 c
+43 158 34 205 34 259 c
+34 310 42 357 60 399 c
+77 441 103 474 137 496 c
+171 518 210 530 253 530 c
+284 530 312 523 337 510 c
+361 497 381 480 396 459 c
+396 716 l
+484 716 l
+484 0 l
+402 0 l
+125 259 m
+125 192 138 142 166 110 c
+194 77 227 61 266 61 c
+304 61 336 76 363 108 c
+390 139 404 187 404 251 c
+404 322 390 374 363 408 c
+335 441 302 458 262 458 c
+222 458 190 442 164 410 c
+138 378 125 327 125 259 c
+f
+Q
+} def
+/e {
+556 0 37 -11 515 530 setcachedevice
+q
+421 167 m
+512 156 l
+497 102 470 61 432 32 c
+393 3 344 -11 284 -11 c
+208 -11 147 12 103 58 c
+59 104 37 170 37 255 c
+37 342 59 410 104 458 c
+148 506 207 530 279 530 c
+348 530 405 506 449 459 c
+493 412 515 346 515 260 c
+515 254 514 247 514 237 c
+127 237 l
+130 179 146 136 175 106 c
+204 76 240 61 284 61 c
+316 61 344 69 367 86 c
+389 102 407 129 421 167 c
+132 309 m
+422 309 l
+418 353 407 385 389 407 c
+361 441 324 458 280 458 c
+239 458 205 444 178 417 c
+150 390 135 354 132 309 c
+f
+Q
+} def
+/eight {
+556 0 41 -11 512 719 setcachedevice
+q
+177 388 m
+140 401 113 420 95 445 c
+77 469 69 499 69 534 c
+69 586 87 629 125 665 c
+163 701 213 719 275 719 c
+337 719 388 700 426 664 c
+464 628 483 584 483 532 c
+483 498 474 469 457 445 c
+439 420 413 401 377 388 c
+421 374 454 351 477 319 c
+500 287 512 249 512 205 c
+512 143 490 92 447 51 c
+403 9 346 -11 276 -11 c
+205 -11 148 9 105 51 c
+62 92 41 144 41 207 c
+41 253 52 292 76 324 c
+99 355 133 376 177 388 c
+159 537 m
+159 503 170 475 192 454 c
+214 432 242 422 277 422 c
+311 422 338 432 360 454 c
+382 475 393 501 393 532 c
+393 564 381 591 359 613 c
+337 635 309 646 276 646 c
+242 646 214 635 192 614 c
+170 592 159 567 159 537 c
+131 207 m
+131 181 137 157 149 134 c
+161 110 178 92 202 79 c
+225 66 250 60 277 60 c
+319 60 353 73 381 100 c
+408 127 422 162 422 204 c
+422 246 408 280 380 308 c
+352 336 316 350 274 350 c
+232 350 198 336 171 309 c
+144 281 131 247 131 207 c
+f
+Q
+} def
+/five {
+556 0 42 -11 516 706 setcachedevice
+q
+42 188 m
+134 195 l
+140 150 156 116 181 94 c
+206 71 236 60 271 60 c
+313 60 349 76 379 108 c
+408 140 423 182 423 235 c
+423 285 408 324 380 353 c
+352 382 315 397 270 397 c
+242 397 216 390 193 377 c
+170 364 152 348 140 328 c
+57 338 l
+126 706 l
+482 706 l
+482 622 l
+197 622 l
+158 430 l
+201 460 246 475 293 475 c
+355 475 408 453 451 410 c
+494 366 516 311 516 243 c
+516 178 497 122 459 75 c
+413 17 351 -11 271 -11 c
+206 -11 153 7 112 43 c
+70 79 47 127 42 188 c
+f
+Q
+} def
+/four {
+556 0 13 0 508 716 setcachedevice
+q
+323 0 m
+323 171 l
+13 171 l
+13 252 l
+339 716 l
+411 716 l
+411 252 l
+508 252 l
+508 171 l
+411 171 l
+411 0 l
+323 0 l
+323 252 m
+323 575 l
+99 252 l
+323 252 l
+f
+Q
+} def
+/h {
+556 0 66 0 488 716 setcachedevice
+q
+66 0 m
+66 716 l
+154 716 l
+154 459 l
+194 506 246 530 309 530 c
+347 530 381 522 409 507 c
+437 492 458 471 470 445 c
+482 418 488 379 488 329 c
+488 0 l
+400 0 l
+400 329 l
+400 373 390 405 371 425 c
+352 445 325 455 291 455 c
+265 455 240 448 217 434 c
+194 420 178 402 168 379 c
+158 356 154 324 154 284 c
+154 0 l
+66 0 l
+f
+Q
+} def
+/i {
+222 0 66 0 154 716 setcachedevice
+q
+66 615 m
+66 716 l
+154 716 l
+154 615 l
+66 615 l
+66 0 m
+66 519 l
+154 519 l
+154 0 l
+66 0 l
+f
+Q
+} def
+/l {
+222 0 64 0 152 716 setcachedevice
+q
+64 0 88 716 re
+f
+Q
+} def
+/m {
+833 0 66 0 769 530 setcachedevice
+q
+66 0 m
+66 519 l
+145 519 l
+145 446 l
+161 471 182 491 209 507 c
+236 522 267 530 302 530 c
+340 530 371 522 396 506 c
+420 490 438 467 448 439 c
+489 499 542 530 608 530 c
+660 530 699 515 727 487 c
+755 459 769 415 769 356 c
+769 0 l
+681 0 l
+681 327 l
+681 361 678 386 672 402 c
+666 418 656 430 641 440 c
+626 449 609 454 589 454 c
+552 454 522 441 498 417 c
+474 393 462 354 462 301 c
+462 0 l
+374 0 l
+374 337 l
+374 376 366 405 352 425 c
+338 444 314 454 282 454 c
+257 454 234 447 213 434 c
+192 421 177 402 168 377 c
+158 352 154 316 154 269 c
+154 0 l
+66 0 l
+f
+Q
+} def
+/n {
+556 0 66 0 487 530 setcachedevice
+q
+66 0 m
+66 519 l
+145 519 l
+145 445 l
+183 501 238 530 310 530 c
+341 530 370 524 396 513 c
+422 502 442 487 455 469 c
+468 451 477 429 482 404 c
+485 388 487 359 487 319 c
+487 0 l
+399 0 l
+399 315 l
+399 351 395 377 389 395 c
+382 413 370 427 353 438 c
+335 448 315 454 292 454 c
+254 454 221 442 194 418 c
+167 394 154 349 154 283 c
+154 0 l
+66 0 l
+f
+Q
+} def
+/nine {
+556 0 42 -11 512 719 setcachedevice
+q
+55 166 m
+139 173 l
+146 133 160 105 180 87 c
+200 69 226 60 258 60 c
+284 60 308 66 328 78 c
+348 90 365 107 378 128 c
+391 148 402 176 411 212 c
+420 247 425 283 425 319 c
+425 323 424 329 424 337 c
+406 309 382 286 352 269 c
+322 251 289 243 253 243 c
+194 243 144 264 103 307 c
+62 350 42 407 42 477 c
+42 549 63 608 106 652 c
+148 696 202 719 267 719 c
+313 719 355 706 394 681 c
+432 656 462 620 482 574 c
+502 527 512 460 512 373 c
+512 281 502 208 482 154 c
+462 100 433 59 394 31 c
+354 3 308 -11 256 -11 c
+200 -11 154 4 118 35 c
+82 65 61 109 55 166 c
+415 481 m
+415 531 401 571 374 601 c
+347 631 315 646 277 646 c
+238 646 204 630 175 598 c
+146 566 132 524 132 474 c
+132 428 145 391 173 363 c
+200 334 234 320 275 320 c
+315 320 349 334 375 363 c
+401 391 415 431 415 481 c
+f
+Q
+} def
+/o {
+556 0 33 -11 519 530 setcachedevice
+q
+33 259 m
+33 355 59 426 113 473 c
+157 511 212 530 276 530 c
+347 530 405 506 451 460 c
+496 413 519 349 519 267 c
+519 200 509 147 489 109 c
+469 71 439 41 401 20 c
+363 0 321 -11 276 -11 c
+203 -11 144 12 100 58 c
+55 104 33 171 33 259 c
+124 259 m
+124 193 138 143 167 110 c
+195 77 232 61 276 61 c
+320 61 356 77 385 110 c
+414 143 429 194 429 262 c
+429 326 414 374 385 408 c
+355 441 319 458 276 458 c
+232 458 195 441 167 408 c
+138 375 124 325 124 259 c
+f
+Q
+} def
+/one {
+556 0 109 0 373 719 setcachedevice
+q
+373 0 m
+285 0 l
+285 560 l
+263 540 235 519 201 499 c
+167 479 136 464 109 454 c
+109 539 l
+158 562 201 590 238 623 c
+274 655 300 687 316 719 c
+373 719 l
+373 0 l
+f
+Q
+} def
+/period {
+278 0 91 0 191 100 setcachedevice
+q
+91 0 100 100 re
+f
+Q
+} def
+/r {
+333 0 65 0 347 530 setcachedevice
+q
+65 0 m
+65 519 l
+144 519 l
+144 440 l
+164 476 182 500 200 512 c
+217 524 236 530 256 530 c
+286 530 316 520 347 502 c
+316 420 l
+294 432 273 439 252 439 c
+232 439 215 433 200 422 c
+184 410 173 394 167 374 c
+157 342 153 308 153 271 c
+153 0 l
+65 0 l
+f
+Q
+} def
+/s {
+500 0 31 -11 461 530 setcachedevice
+q
+31 155 m
+118 168 l
+122 133 136 106 158 88 c
+180 70 212 61 252 61 c
+292 61 322 69 342 85 c
+361 101 371 121 371 143 c
+371 163 362 178 345 190 c
+333 198 303 208 255 220 c
+191 236 146 250 121 262 c
+96 274 77 290 64 311 c
+51 332 45 355 45 381 c
+45 404 50 425 61 445 c
+71 465 86 481 104 494 c
+118 504 136 512 160 519 c
+184 526 209 530 236 530 c
+276 530 312 524 343 512 c
+374 500 397 485 412 465 c
+426 445 436 418 442 385 c
+356 373 l
+352 399 340 420 322 435 c
+303 450 277 458 243 458 c
+202 458 173 451 156 438 c
+138 424 130 409 130 391 c
+130 379 133 369 141 360 c
+148 350 159 343 175 337 c
+183 333 209 326 252 314 c
+314 298 358 284 382 274 c
+406 263 426 247 440 227 c
+454 207 461 182 461 152 c
+461 122 452 95 435 69 c
+418 43 393 24 361 10 c
+329 -4 292 -11 252 -11 c
+184 -11 133 2 98 30 c
+62 58 40 99 31 155 c
+f
+Q
+} def
+/seven {
+556 0 47 0 511 707 setcachedevice
+q
+47 622 m
+47 707 l
+511 707 l
+511 638 l
+465 589 419 524 375 444 c
+330 364 295 281 271 197 c
+253 137 242 71 238 0 c
+147 0 l
+148 56 159 124 180 204 c
+201 284 231 361 271 435 c
+311 509 353 571 398 622 c
+47 622 l
+f
+Q
+} def
+/six {
+556 0 38 -11 510 719 setcachedevice
+q
+498 541 m
+410 534 l
+402 568 391 593 377 609 c
+353 633 323 646 289 646 c
+261 646 236 638 215 623 c
+187 603 166 573 150 535 c
+134 496 125 441 125 369 c
+146 401 172 424 203 440 c
+233 456 265 464 299 464 c
+357 464 407 442 448 399 c
+489 356 510 300 510 232 c
+510 187 500 145 481 107 c
+461 68 435 39 401 19 c
+367 -1 329 -11 286 -11 c
+212 -11 153 15 107 69 c
+61 122 38 211 38 335 c
+38 473 63 573 114 637 c
+158 691 218 719 294 719 c
+350 719 397 703 433 671 c
+469 639 490 596 498 541 c
+139 232 m
+139 202 145 173 158 145 c
+170 117 188 96 212 82 c
+235 67 259 60 285 60 c
+321 60 353 75 380 105 c
+406 135 420 175 420 227 c
+420 276 406 315 380 344 c
+354 372 321 387 281 387 c
+241 387 208 372 180 344 c
+152 315 139 278 139 232 c
+f
+Q
+} def
+/space {
+278 0 0 0 0 0 setcachedevice
+q
+Q
+} def
+/t {
+278 0 18 -6 271 700 setcachedevice
+q
+258 79 m
+271 1 l
+245 -3 223 -6 204 -6 c
+172 -6 147 -1 130 8 c
+112 18 100 31 93 48 c
+85 64 82 99 82 152 c
+82 450 l
+18 450 l
+18 519 l
+82 519 l
+82 647 l
+169 700 l
+169 519 l
+258 519 l
+258 450 l
+169 450 l
+169 147 l
+169 121 170 105 174 98 c
+177 91 182 85 189 81 c
+196 77 206 75 219 75 c
+229 75 242 76 258 79 c
+f
+Q
+} def
+/three {
+556 0 42 -12 511 719 setcachedevice
+q
+42 189 m
+130 201 l
+140 151 157 115 181 93 c
+205 71 235 60 270 60 c
+311 60 346 74 374 103 c
+402 131 417 167 417 209 c
+417 249 403 283 377 309 c
+351 335 317 349 277 349 c
+260 349 239 345 215 339 c
+225 416 l
+231 415 235 415 239 415 c
+276 415 310 424 340 444 c
+370 464 385 494 385 535 c
+385 567 374 593 352 614 c
+330 635 302 646 268 646 c
+234 646 205 635 182 614 c
+159 592 145 560 139 518 c
+51 533 l
+61 592 86 638 124 670 c
+162 702 209 719 266 719 c
+305 719 341 710 374 693 c
+406 676 431 653 449 625 c
+467 596 476 565 476 533 c
+476 501 467 473 451 448 c
+434 422 409 402 377 388 c
+419 378 451 357 475 327 c
+499 296 511 257 511 211 c
+511 149 488 96 442 53 c
+396 9 339 -12 270 -12 c
+206 -12 154 6 113 44 c
+71 81 48 129 42 189 c
+f
+Q
+} def
+/two {
+556 0 29 0 503 719 setcachedevice
+q
+503 84 m
+503 0 l
+30 0 l
+29 21 33 41 41 61 c
+53 93 72 124 98 156 c
+124 187 163 223 213 265 c
+291 328 343 378 371 416 c
+398 453 412 488 412 522 c
+412 556 399 586 374 610 c
+349 634 317 646 277 646 c
+235 646 201 633 176 608 c
+150 582 137 547 137 502 c
+47 512 l
+53 579 76 630 116 666 c
+156 701 211 719 279 719 c
+347 719 402 699 442 661 c
+482 623 502 576 502 520 c
+502 491 496 463 484 435 c
+472 407 453 378 426 348 c
+399 317 354 275 291 222 c
+238 178 204 148 189 132 c
+174 116 162 100 152 84 c
+503 84 l
+f
+Q
+} def
+/u {
+556 0 64 -11 484 519 setcachedevice
+q
+406 0 m
+406 76 l
+365 18 310 -11 241 -11 c
+210 -11 181 -5 155 6 c
+129 17 109 32 96 50 c
+83 68 74 89 69 115 c
+65 132 64 159 64 197 c
+64 519 l
+152 519 l
+152 231 l
+152 185 153 154 157 138 c
+163 115 174 97 192 84 c
+210 70 232 64 259 64 c
+285 64 309 70 333 84 c
+356 97 372 115 382 139 c
+391 162 396 196 396 241 c
+396 519 l
+484 519 l
+484 0 l
+406 0 l
+f
+Q
+} def
+/y {
+500 0 16 -209 491 519 setcachedevice
+q
+62 -199 m
+52 -116 l
+71 -121 88 -124 103 -124 c
+122 -124 137 -120 149 -114 c
+161 -107 170 -98 178 -87 c
+184 -78 193 -56 205 -21 c
+207 -16 209 -9 213 0 c
+16 519 l
+111 519 l
+219 218 l
+233 180 245 140 256 98 c
+266 138 278 178 292 216 c
+403 519 l
+491 519 l
+294 -8 l
+272 -64 256 -103 245 -125 c
+229 -154 211 -175 191 -189 c
+171 -202 147 -209 119 -209 c
+101 -209 82 -205 62 -199 c
+f
+Q
+} def
+/zero {
+556 0 42 -11 508 719 setcachedevice
+q
+42 353 m
+42 437 50 505 68 557 c
+85 609 111 649 145 677 c
+179 705 223 719 275 719 c
+313 719 347 711 376 695 c
+404 679 428 657 447 628 c
+466 599 481 564 492 522 c
+502 480 508 423 508 353 c
+508 269 499 201 482 149 c
+465 97 439 58 405 30 c
+371 2 327 -11 275 -11 c
+205 -11 151 13 112 62 c
+65 121 42 218 42 353 c
+132 353 m
+132 235 145 157 173 118 c
+200 79 234 60 275 60 c
+315 60 348 79 376 118 c
+404 157 418 235 418 353 c
+418 471 404 549 376 588 c
+348 626 314 646 274 646 c
+233 646 201 629 177 595 c
+147 551 132 470 132 353 c
+f
+Q
+} def
+end
+currentdict end
+/T3_15_0 exch definefont pop
+%%EndResource
+/F15_0 /T3_15_0 1 1
+[ /.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+  /.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+  /.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+  /.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+  /space/exclam/quotedbl/numbersign/dollar/percent/ampersand/quoteright
+  /parenleft/parenright/asterisk/plus/comma/hyphen/period/slash
+  /zero/one/two/three/four/five/six/seven
+  /eight/nine/colon/semicolon/less/equal/greater/question
+  /at/A/B/C/D/E/F/G
+  /H/I/J/K/L/M/N/O
+  /P/Q/R/S/T/U/V/W
+  /X/Y/Z/bracketleft/backslash/bracketright/asciicircum/underscore
+  /quoteleft/a/b/c/d/e/f/g
+  /h/i/j/k/l/m/n/o
+  /p/q/r/s/t/u/v/w
+  /x/y/z/braceleft/bar/braceright/asciitilde/.notdef
+  /.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+  /.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+  /.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+  /.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+  /.notdef/exclamdown/cent/sterling/fraction/yen/florin/section
+  /currency/quotesingle/quotedblleft/guillemotleft/guilsinglleft/guilsinglright/fi/fl
+  /.notdef/endash/dagger/daggerdbl/periodcentered/.notdef/paragraph/bullet
+  /quotesinglbase/quotedblbase/quotedblright/guillemotright/ellipsis/perthousand/.notdef/questiondown
+  /.notdef/grave/acute/circumflex/tilde/macron/breve/dotaccent
+  /dieresis/.notdef/ring/cedilla/.notdef/hungarumlaut/ogonek/caron
+  /emdash/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+  /.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+  /.notdef/AE/.notdef/ordfeminine/.notdef/.notdef/.notdef/.notdef
+  /Lslash/Oslash/OE/ordmasculine/.notdef/.notdef/.notdef/.notdef
+  /.notdef/ae/.notdef/.notdef/.notdef/dotlessi/.notdef/.notdef
+  /lslash/oslash/oe/germandbls/.notdef/.notdef/.notdef/.notdef]
+pdfMakeFont
+end
+%%EndSetup
+xpdf begin
+pdfStartPage
+[] 0 d
+1 i
+0 j
+0 J
+10 M
+1 w
+/DeviceGray {} cs
+[0] sc
+/DeviceGray {} CS
+[0] SC
+false op
+false OP
+{} settransfer
+0 0 432 288 re
+W
+q
+1 j
+/DeviceGray {} cs
+[1] sc
+0 j
+0 w
+[] 0 d
+/DeviceGray {} CS
+[1] SC
+/DeviceGray {} cs
+[1] sc
+0 0 432 288 re
+f
+/DeviceGray {} CS
+[0] SC
+54 36 267.84 217.44 re
+f
+/DeviceGray {} cs
+[0.15] sc
+1 j
+1 w
+[] 0 d
+/DeviceGray {} CS
+[0.15] SC
+/DeviceGray {} cs
+[0.15] sc
+[1 0 0 1 0 0] Tm
+0 0 Td
+57.306023 21.84375 Td
+/F15_0 10 Tf
+(1)
+[5.56
+0] Tj3
+[1 0 0 1 0 0] Tm
+0 0 Td
+69.480568 21.84375 Td
+/F15_0 10 Tf
+(2)
+[5.56
+0] Tj3
+[1 0 0 1 0 0] Tm
+0 0 Td
+81.655114 21.84375 Td
+/F15_0 10 Tf
+(3)
+[5.56
+0] Tj3
+[1 0 0 1 0 0] Tm
+0 0 Td
+93.829659 21.84375 Td
+/F15_0 10 Tf
+(4)
+[5.56
+0] Tj3
+[1 0 0 1 0 0] Tm
+0 0 Td
+106.004205 21.84375 Td
+/F15_0 10 Tf
+(5)
+[5.56
+0] Tj3
+[1 0 0 1 0 0] Tm
+0 0 Td
+118.17875 21.84375 Td
+/F15_0 10 Tf
+(6)
+[5.56
+0] Tj3
+[1 0 0 1 0 0] Tm
+0 0 Td
+130.353295 21.84375 Td
+/F15_0 10 Tf
+(7)
+[5.56
+0] Tj3
+[1 0 0 1 0 0] Tm
+0 0 Td
+142.527841 21.84375 Td
+/F15_0 10 Tf
+(8)
+[5.56
+0] Tj3
+[1 0 0 1 0 0] Tm
+0 0 Td
+154.702386 21.84375 Td
+/F15_0 10 Tf
+(9)
+[5.56
+0] Tj3
+[1 0 0 1 0 0] Tm
+0 0 Td
+164.095682 21.84375 Td
+/F15_0 10 Tf
+(10)
+[5.56
+0
+5.56
+0] Tj3
+[1 0 0 1 0 0] Tm
+0 0 Td
+176.270227 21.84375 Td
+/F15_0 10 Tf
+(11)
+[5.56
+0
+5.56
+0] Tj3
+[1 0 0 1 0 0] Tm
+0 0 Td
+188.444773 21.84375 Td
+/F15_0 10 Tf
+(12)
+[5.56
+0
+5.56
+0] Tj3
+[1 0 0 1 0 0] Tm
+0 0 Td
+200.619318 21.84375 Td
+/F15_0 10 Tf
+(13)
+[5.56
+0
+5.56
+0] Tj3
+[1 0 0 1 0 0] Tm
+0 0 Td
+212.793864 21.84375 Td
+/F15_0 10 Tf
+(14)
+[5.56
+0
+5.56
+0] Tj3
+[1 0 0 1 0 0] Tm
+0 0 Td
+224.968409 21.84375 Td
+/F15_0 10 Tf
+(15)
+[5.56
+0
+5.56
+0] Tj3
+[1 0 0 1 0 0] Tm
+0 0 Td
+237.142955 21.84375 Td
+/F15_0 10 Tf
+(16)
+[5.56
+0
+5.56
+0] Tj3
+[1 0 0 1 0 0] Tm
+0 0 Td
+249.3175 21.84375 Td
+/F15_0 10 Tf
+(17)
+[5.56
+0
+5.56
+0] Tj3
+[1 0 0 1 0 0] Tm
+0 0 Td
+261.492045 21.84375 Td
+/F15_0 10 Tf
+(18)
+[5.56
+0
+5.56
+0] Tj3
+[1 0 0 1 0 0] Tm
+0 0 Td
+273.666591 21.84375 Td
+/F15_0 10 Tf
+(19)
+[5.56
+0
+5.56
+0] Tj3
+[1 0 0 1 0 0] Tm
+0 0 Td
+285.841136 21.84375 Td
+/F15_0 10 Tf
+(20)
+[5.56
+0
+5.56
+0] Tj3
+[1 0 0 1 0 0] Tm
+0 0 Td
+298.015682 21.84375 Td
+/F15_0 10 Tf
+(21)
+[5.56
+0
+5.56
+0] Tj3
+[1 0 0 1 0 0] Tm
+0 0 Td
+310.190227 21.84375 Td
+/F15_0 10 Tf
+(22)
+[5.56
+0
+5.56
+0] Tj3
+[1 0 0 1 0 0] Tm
+0 0 Td
+157.912188 8.703125 Td
+/F15_0 10 Tf
+(Chromosome)
+[7.22
+0
+5.56
+0
+3.33
+0
+5.56
+0
+8.33
+0
+5.56
+0
+5
+0
+5.56
+0
+8.33
+0
+5.56
+0] Tj3
+q
+[1 0 0 1 18.109375 240.801875] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+0 0 Td
+/F15_0 10 Tf
+(C )
+[7.22
+0
+2.78
+0] Tj3
+20 0 Td
+( T)
+[2.78
+0
+6.11
+0] Tj3
+q
+[0.01 0 0 0.01 10 0] cm
+q
+-665 -325 2665 1331 re
+W
+q
+759 428 m
+802 380 839 344 871 320 c
+903 295 933 277 961 265 c
+961 243 l
+929 227 897 207 867 183 c
+837 159 801 123 759 77 c
+721 77 l
+751 142 783 192 817 228 c
+39 228 l
+39 277 l
+817 277 l
+792 308 775 331 765 347 c
+755 362 741 389 722 428 c
+759 428 l
+f
+Q
+Q
+Q
+Q
+q
+[1 0 0 1 16.984375 222.681875] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+0 0 Td
+/F15_0 10 Tf
+(G )
+[7.78
+0
+2.78
+0] Tj3
+20.556641 0 Td
+( A)
+[2.78
+0
+6.67
+0] Tj3
+q
+[0.01 0 0 0.01 10.556641 0] cm
+q
+-665 -325 2665 1331 re
+W
+q
+759 428 m
+802 380 839 344 871 320 c
+903 295 933 277 961 265 c
+961 243 l
+929 227 897 207 867 183 c
+837 159 801 123 759 77 c
+721 77 l
+751 142 783 192 817 228 c
+39 228 l
+39 277 l
+817 277 l
+792 308 775 331 765 347 c
+755 362 741 389 722 428 c
+759 428 l
+f
+Q
+Q
+Q
+Q
+q
+[1 0 0 1 18.109375 204.561875] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+0 0 Td
+/F15_0 10 Tf
+(T )
+[6.11
+0
+2.78
+0] Tj3
+18.886719 0 Td
+( C)
+[2.78
+0
+7.22
+0] Tj3
+q
+[0.01 0 0 0.01 8.886719 0] cm
+q
+-665 -325 2665 1331 re
+W
+q
+759 428 m
+802 380 839 344 871 320 c
+903 295 933 277 961 265 c
+961 243 l
+929 227 897 207 867 183 c
+837 159 801 123 759 77 c
+721 77 l
+751 142 783 192 817 228 c
+39 228 l
+39 277 l
+817 277 l
+792 308 775 331 765 347 c
+755 362 741 389 722 428 c
+759 428 l
+f
+Q
+Q
+Q
+Q
+q
+[1 0 0 1 16.984375 186.441875] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+0 0 Td
+/F15_0 10 Tf
+(A )
+[6.67
+0
+2.78
+0] Tj3
+19.448242 0 Td
+( G)
+[2.78
+0
+7.78
+0] Tj3
+q
+[0.01 0 0 0.01 9.448242 0] cm
+q
+-665 -325 2665 1331 re
+W
+q
+759 428 m
+802 380 839 344 871 320 c
+903 295 933 277 961 265 c
+961 243 l
+929 227 897 207 867 183 c
+837 159 801 123 759 77 c
+721 77 l
+751 142 783 192 817 228 c
+39 228 l
+39 277 l
+817 277 l
+792 308 775 331 765 347 c
+755 362 741 389 722 428 c
+759 428 l
+f
+Q
+Q
+Q
+Q
+q
+[1 0 0 1 16.4375 168.321875] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+0 0 Td
+/F15_0 10 Tf
+(C )
+[7.22
+0
+2.78
+0] Tj3
+20 0 Td
+( G)
+[2.78
+0
+7.78
+0] Tj3
+q
+[0.01 0 0 0.01 10 0] cm
+q
+-665 -325 2665 1331 re
+W
+q
+759 428 m
+802 380 839 344 871 320 c
+903 295 933 277 961 265 c
+961 243 l
+929 227 897 207 867 183 c
+837 159 801 123 759 77 c
+721 77 l
+751 142 783 192 817 228 c
+39 228 l
+39 277 l
+817 277 l
+792 308 775 331 765 347 c
+755 362 741 389 722 428 c
+759 428 l
+f
+Q
+Q
+Q
+Q
+q
+[1 0 0 1 16.4375 150.201875] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+0 0 Td
+/F15_0 10 Tf
+(G )
+[7.78
+0
+2.78
+0] Tj3
+20.556641 0 Td
+( C)
+[2.78
+0
+7.22
+0] Tj3
+q
+[0.01 0 0 0.01 10.556641 0] cm
+q
+-665 -325 2665 1331 re
+W
+q
+759 428 m
+802 380 839 344 871 320 c
+903 295 933 277 961 265 c
+961 243 l
+929 227 897 207 867 183 c
+837 159 801 123 759 77 c
+721 77 l
+751 142 783 192 817 228 c
+39 228 l
+39 277 l
+817 277 l
+792 308 775 331 765 347 c
+755 362 741 389 722 428 c
+759 428 l
+f
+Q
+Q
+Q
+Q
+q
+[1 0 0 1 17.546875 132.081875] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+0 0 Td
+/F15_0 10 Tf
+(T )
+[6.11
+0
+2.78
+0] Tj3
+18.886719 0 Td
+( G)
+[2.78
+0
+7.78
+0] Tj3
+q
+[0.01 0 0 0.01 8.886719 0] cm
+q
+-665 -325 2665 1331 re
+W
+q
+759 428 m
+802 380 839 344 871 320 c
+903 295 933 277 961 265 c
+961 243 l
+929 227 897 207 867 183 c
+837 159 801 123 759 77 c
+721 77 l
+751 142 783 192 817 228 c
+39 228 l
+39 277 l
+817 277 l
+792 308 775 331 765 347 c
+755 362 741 389 722 428 c
+759 428 l
+f
+Q
+Q
+Q
+Q
+q
+[1 0 0 1 17.546875 113.961875] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+0 0 Td
+/F15_0 10 Tf
+(A )
+[6.67
+0
+2.78
+0] Tj3
+19.448242 0 Td
+( C)
+[2.78
+0
+7.22
+0] Tj3
+q
+[0.01 0 0 0.01 9.448242 0] cm
+q
+-665 -325 2665 1331 re
+W
+q
+759 428 m
+802 380 839 344 871 320 c
+903 295 933 277 961 265 c
+961 243 l
+929 227 897 207 867 183 c
+837 159 801 123 759 77 c
+721 77 l
+751 142 783 192 817 228 c
+39 228 l
+39 277 l
+817 277 l
+792 308 775 331 765 347 c
+755 362 741 389 722 428 c
+759 428 l
+f
+Q
+Q
+Q
+Q
+q
+[1 0 0 1 18.65625 95.841875] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+0 0 Td
+/F15_0 10 Tf
+(T )
+[6.11
+0
+2.78
+0] Tj3
+18.886719 0 Td
+( A)
+[2.78
+0
+6.67
+0] Tj3
+q
+[0.01 0 0 0.01 8.886719 0] cm
+q
+-665 -325 2665 1331 re
+W
+q
+759 428 m
+802 380 839 344 871 320 c
+903 295 933 277 961 265 c
+961 243 l
+929 227 897 207 867 183 c
+837 159 801 123 759 77 c
+721 77 l
+751 142 783 192 817 228 c
+39 228 l
+39 277 l
+817 277 l
+792 308 775 331 765 347 c
+755 362 741 389 722 428 c
+759 428 l
+f
+Q
+Q
+Q
+Q
+q
+[1 0 0 1 18.65625 77.721875] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+0 0 Td
+/F15_0 10 Tf
+(A )
+[6.67
+0
+2.78
+0] Tj3
+19.448242 0 Td
+( T)
+[2.78
+0
+6.11
+0] Tj3
+q
+[0.01 0 0 0.01 9.448242 0] cm
+q
+-665 -325 2665 1331 re
+W
+q
+759 428 m
+802 380 839 344 871 320 c
+903 295 933 277 961 265 c
+961 243 l
+929 227 897 207 867 183 c
+837 159 801 123 759 77 c
+721 77 l
+751 142 783 192 817 228 c
+39 228 l
+39 277 l
+817 277 l
+792 308 775 331 765 347 c
+755 362 741 389 722 428 c
+759 428 l
+f
+Q
+Q
+Q
+Q
+q
+[1 0 0 1 17.546875 59.601875] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+0 0 Td
+/F15_0 10 Tf
+(C )
+[7.22
+0
+2.78
+0] Tj3
+20 0 Td
+( A)
+[2.78
+0
+6.67
+0] Tj3
+q
+[0.01 0 0 0.01 10 0] cm
+q
+-665 -325 2665 1331 re
+W
+q
+759 428 m
+802 380 839 344 871 320 c
+903 295 933 277 961 265 c
+961 243 l
+929 227 897 207 867 183 c
+837 159 801 123 759 77 c
+721 77 l
+751 142 783 192 817 228 c
+39 228 l
+39 277 l
+817 277 l
+792 308 775 331 765 347 c
+755 362 741 389 722 428 c
+759 428 l
+f
+Q
+Q
+Q
+Q
+q
+[1 0 0 1 17.546875 41.481875] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+0 0 Td
+/F15_0 10 Tf
+(G )
+[7.78
+0
+2.78
+0] Tj3
+20.556641 0 Td
+( T)
+[2.78
+0
+6.11
+0] Tj3
+q
+[0.01 0 0 0.01 10.556641 0] cm
+q
+-665 -325 2665 1331 re
+W
+q
+759 428 m
+802 380 839 344 871 320 c
+903 295 933 277 961 265 c
+961 243 l
+929 227 897 207 867 183 c
+837 159 801 123 759 77 c
+721 77 l
+751 142 783 192 817 228 c
+39 228 l
+39 277 l
+817 277 l
+792 308 775 331 765 347 c
+755 362 741 389 722 428 c
+759 428 l
+f
+Q
+Q
+Q
+Q
+[1 0 0 1 0 0] Tm
+0 0 Td
+[0 1 -1 0 10.453125 105.25125] Tm
+0 0 Td
+0 0 Td
+/F15_0 10 Tf
+(Mutation direction)
+[8.33
+0
+5.56
+0
+2.78
+0
+5.56
+0
+2.78
+0
+2.22
+0
+5.56
+0
+5.56
+0
+2.78
+0
+5.56
+0
+2.22
+0
+3.33
+0
+5.56
+0
+5
+0
+2.78
+0
+2.22
+0
+5.56
+0
+5.56
+0] Tj3
+q
+54 36 267.84 217.44 re
+W
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+0 w
+/DeviceGray {} CS
+[1] SC
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+54 235.32 12.174545 18.12 re
+f
+66.174545 235.32 12.174546 18.12 re
+f
+78.349091 235.32 12.174545 18.12 re
+f
+90.523636 235.32 12.174546 18.12 re
+f
+102.698182 235.32 12.174545 18.12 re
+f
+114.872727 235.32 12.174546 18.12 re
+f
+127.047273 235.32 12.174545 18.12 re
+f
+139.221818 235.32 12.174546 18.12 re
+f
+151.396364 235.32 12.174545 18.12 re
+f
+163.570909 235.32 12.174546 18.12 re
+f
+175.745455 235.32 12.174545 18.12 re
+f
+187.92 235.32 12.174545 18.12 re
+f
+200.094545 235.32 12.174546 18.12 re
+f
+212.269091 235.32 12.174545 18.12 re
+f
+224.443636 235.32 12.174546 18.12 re
+f
+236.618182 235.32 12.174545 18.12 re
+f
+248.792727 235.32 12.174546 18.12 re
+f
+260.967273 235.32 12.174545 18.12 re
+f
+273.141818 235.32 12.174546 18.12 re
+f
+285.316364 235.32 12.174545 18.12 re
+f
+297.490909 235.32 12.174546 18.12 re
+f
+309.665455 235.32 12.174545 18.12 re
+f
+54 217.2 12.174545 18.12 re
+f
+66.174545 217.2 12.174546 18.12 re
+f
+78.349091 217.2 12.174545 18.12 re
+f
+90.523636 217.2 12.174546 18.12 re
+f
+102.698182 217.2 12.174545 18.12 re
+f
+114.872727 217.2 12.174546 18.12 re
+f
+127.047273 217.2 12.174545 18.12 re
+f
+139.221818 217.2 12.174546 18.12 re
+f
+151.396364 217.2 12.174545 18.12 re
+f
+163.570909 217.2 12.174546 18.12 re
+f
+175.745455 217.2 12.174545 18.12 re
+f
+187.92 217.2 12.174545 18.12 re
+f
+200.094545 217.2 12.174546 18.12 re
+f
+212.269091 217.2 12.174545 18.12 re
+f
+224.443636 217.2 12.174546 18.12 re
+f
+236.618182 217.2 12.174545 18.12 re
+f
+248.792727 217.2 12.174546 18.12 re
+f
+260.967273 217.2 12.174545 18.12 re
+f
+273.141818 217.2 12.174546 18.12 re
+f
+285.316364 217.2 12.174545 18.12 re
+f
+297.490909 217.2 12.174546 18.12 re
+f
+309.665455 217.2 12.174545 18.12 re
+f
+54 199.08 12.174545 18.12 re
+f
+66.174545 199.08 12.174546 18.12 re
+f
+78.349091 199.08 12.174545 18.12 re
+f
+90.523636 199.08 12.174546 18.12 re
+f
+102.698182 199.08 12.174545 18.12 re
+f
+114.872727 199.08 12.174546 18.12 re
+f
+127.047273 199.08 12.174545 18.12 re
+f
+139.221818 199.08 12.174546 18.12 re
+f
+151.396364 199.08 12.174545 18.12 re
+f
+163.570909 199.08 12.174546 18.12 re
+f
+175.745455 199.08 12.174545 18.12 re
+f
+187.92 199.08 12.174545 18.12 re
+f
+200.094545 199.08 12.174546 18.12 re
+f
+212.269091 199.08 12.174545 18.12 re
+f
+224.443636 199.08 12.174546 18.12 re
+f
+236.618182 199.08 12.174545 18.12 re
+f
+248.792727 199.08 12.174546 18.12 re
+f
+260.967273 199.08 12.174545 18.12 re
+f
+273.141818 199.08 12.174546 18.12 re
+f
+285.316364 199.08 12.174545 18.12 re
+f
+297.490909 199.08 12.174546 18.12 re
+f
+309.665455 199.08 12.174545 18.12 re
+f
+54 180.96 12.174545 18.12 re
+f
+66.174545 180.96 12.174546 18.12 re
+f
+78.349091 180.96 12.174545 18.12 re
+f
+90.523636 180.96 12.174546 18.12 re
+f
+102.698182 180.96 12.174545 18.12 re
+f
+114.872727 180.96 12.174546 18.12 re
+f
+127.047273 180.96 12.174545 18.12 re
+f
+139.221818 180.96 12.174546 18.12 re
+f
+151.396364 180.96 12.174545 18.12 re
+f
+163.570909 180.96 12.174546 18.12 re
+f
+175.745455 180.96 12.174545 18.12 re
+f
+187.92 180.96 12.174545 18.12 re
+f
+200.094545 180.96 12.174546 18.12 re
+f
+212.269091 180.96 12.174545 18.12 re
+f
+224.443636 180.96 12.174546 18.12 re
+f
+236.618182 180.96 12.174545 18.12 re
+f
+248.792727 180.96 12.174546 18.12 re
+f
+260.967273 180.96 12.174545 18.12 re
+f
+273.141818 180.96 12.174546 18.12 re
+f
+285.316364 180.96 12.174545 18.12 re
+f
+297.490909 180.96 12.174546 18.12 re
+f
+309.665455 180.96 12.174545 18.12 re
+f
+54 162.84 12.174545 18.12 re
+f
+66.174545 162.84 12.174546 18.12 re
+f
+78.349091 162.84 12.174545 18.12 re
+f
+90.523636 162.84 12.174546 18.12 re
+f
+102.698182 162.84 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.2607 0.5272] sc
+/DeviceRGB {} cs
+[0.0314 0.2607 0.5272] sc
+114.872727 162.84 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.051 0.3427 0.6314] sc
+/DeviceRGB {} cs
+[0.051 0.3427 0.6314] sc
+127.047273 162.84 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.24 0.4965] sc
+/DeviceRGB {} cs
+[0.0314 0.24 0.4965] sc
+139.221818 162.84 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+151.396364 162.84 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.1216 0.4331 0.702] sc
+/DeviceRGB {} cs
+[0.1216 0.4331 0.702] sc
+163.570909 162.84 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.7012 0.8268 0.9109] sc
+/DeviceRGB {} cs
+[0.7012 0.8268 0.9109] sc
+175.745455 162.84 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+187.92 162.84 12.174545 18.12 re
+f
+200.094545 162.84 12.174546 18.12 re
+f
+212.269091 162.84 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.3167 0.6121 0.7991] sc
+/DeviceRGB {} cs
+[0.3167 0.6121 0.7991] sc
+224.443636 162.84 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+236.618182 162.84 12.174545 18.12 re
+f
+248.792727 162.84 12.174546 18.12 re
+f
+260.967273 162.84 12.174545 18.12 re
+f
+273.141818 162.84 12.174546 18.12 re
+f
+285.316364 162.84 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.0902 0.3929 0.6706] sc
+/DeviceRGB {} cs
+[0.0902 0.3929 0.6706] sc
+297.490909 162.84 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+309.665455 162.84 12.174545 18.12 re
+f
+54 144.72 12.174545 18.12 re
+f
+66.174545 144.72 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.1398 0.4535 0.7151] sc
+/DeviceRGB {} cs
+[0.1398 0.4535 0.7151] sc
+78.349091 144.72 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+90.523636 144.72 12.174546 18.12 re
+f
+102.698182 144.72 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.3021 0.5887] sc
+/DeviceRGB {} cs
+[0.0314 0.3021 0.5887] sc
+114.872727 144.72 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+127.047273 144.72 12.174545 18.12 re
+f
+139.221818 144.72 12.174546 18.12 re
+f
+151.396364 144.72 12.174545 18.12 re
+f
+163.570909 144.72 12.174546 18.12 re
+f
+175.745455 144.72 12.174545 18.12 re
+f
+187.92 144.72 12.174545 18.12 re
+f
+200.094545 144.72 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.098 0.403 0.6784] sc
+/DeviceRGB {} cs
+[0.098 0.403 0.6784] sc
+212.269091 144.72 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.3553 0.6384 0.8141] sc
+/DeviceRGB {} cs
+[0.3553 0.6384 0.8141] sc
+224.443636 144.72 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.2652 0.5769 0.779] sc
+/DeviceRGB {} cs
+[0.2652 0.5769 0.779] sc
+236.618182 144.72 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+248.792727 144.72 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.0902 0.3929 0.6706] sc
+/DeviceRGB {} cs
+[0.0902 0.3929 0.6706] sc
+260.967273 144.72 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.2652 0.5769 0.779] sc
+/DeviceRGB {} cs
+[0.2652 0.5769 0.779] sc
+273.141818 144.72 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.2504 0.5118] sc
+/DeviceRGB {} cs
+[0.0314 0.2504 0.5118] sc
+285.316364 144.72 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+297.490909 144.72 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.2607 0.5272] sc
+/DeviceRGB {} cs
+[0.0314 0.2607 0.5272] sc
+309.665455 144.72 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+54 126.6 12.174545 18.12 re
+f
+66.174545 126.6 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.2607 0.5272] sc
+/DeviceRGB {} cs
+[0.0314 0.2607 0.5272] sc
+78.349091 126.6 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.3021 0.5887] sc
+/DeviceRGB {} cs
+[0.0314 0.3021 0.5887] sc
+90.523636 126.6 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+102.698182 126.6 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.24 0.4965] sc
+/DeviceRGB {} cs
+[0.0314 0.24 0.4965] sc
+114.872727 126.6 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+127.047273 126.6 12.174545 18.12 re
+f
+139.221818 126.6 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.2814 0.558] sc
+/DeviceRGB {} cs
+[0.0314 0.2814 0.558] sc
+151.396364 126.6 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+163.570909 126.6 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.8141 0.8839 0.9498] sc
+/DeviceRGB {} cs
+[0.8141 0.8839 0.9498] sc
+175.745455 126.6 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.051 0.3427 0.6314] sc
+/DeviceRGB {} cs
+[0.051 0.3427 0.6314] sc
+187.92 126.6 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+200.094545 126.6 12.174546 18.12 re
+f
+212.269091 126.6 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.051 0.3427 0.6314] sc
+/DeviceRGB {} cs
+[0.051 0.3427 0.6314] sc
+224.443636 126.6 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+236.618182 126.6 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.2536 0.5674 0.7738] sc
+/DeviceRGB {} cs
+[0.2536 0.5674 0.7738] sc
+248.792727 126.6 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+260.967273 126.6 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.8367 0.899 0.9573] sc
+/DeviceRGB {} cs
+[0.8367 0.899 0.9573] sc
+273.141818 126.6 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+285.316364 126.6 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.0745 0.3728 0.6549] sc
+/DeviceRGB {} cs
+[0.0745 0.3728 0.6549] sc
+297.490909 126.6 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.24 0.4965] sc
+/DeviceRGB {} cs
+[0.0314 0.24 0.4965] sc
+309.665455 126.6 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+54 108.48 12.174545 18.12 re
+f
+66.174545 108.48 12.174546 18.12 re
+f
+78.349091 108.48 12.174545 18.12 re
+f
+90.523636 108.48 12.174546 18.12 re
+f
+102.698182 108.48 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.24 0.4965] sc
+/DeviceRGB {} cs
+[0.0314 0.24 0.4965] sc
+114.872727 108.48 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+127.047273 108.48 12.174545 18.12 re
+f
+139.221818 108.48 12.174546 18.12 re
+f
+151.396364 108.48 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.2607 0.5272] sc
+/DeviceRGB {} cs
+[0.0314 0.2607 0.5272] sc
+163.570909 108.48 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.2536 0.5674 0.7738] sc
+/DeviceRGB {} cs
+[0.2536 0.5674 0.7738] sc
+175.745455 108.48 12.174545 18.12 re
+f
+187.92 108.48 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+200.094545 108.48 12.174546 18.12 re
+f
+212.269091 108.48 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.051 0.3427 0.6314] sc
+/DeviceRGB {} cs
+[0.051 0.3427 0.6314] sc
+224.443636 108.48 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+236.618182 108.48 12.174545 18.12 re
+f
+248.792727 108.48 12.174546 18.12 re
+f
+260.967273 108.48 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.2607 0.5272] sc
+/DeviceRGB {} cs
+[0.0314 0.2607 0.5272] sc
+273.141818 108.48 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+285.316364 108.48 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.3021 0.5887] sc
+/DeviceRGB {} cs
+[0.0314 0.3021 0.5887] sc
+297.490909 108.48 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.2711 0.5426] sc
+/DeviceRGB {} cs
+[0.0314 0.2711 0.5426] sc
+309.665455 108.48 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.9294 0.9592 0.9874] sc
+/DeviceRGB {} cs
+[0.9294 0.9592 0.9874] sc
+54 90.36 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.051 0.3427 0.6314] sc
+/DeviceRGB {} cs
+[0.051 0.3427 0.6314] sc
+66.174545 90.36 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.8292 0.894 0.9548] sc
+/DeviceRGB {} cs
+[0.8292 0.894 0.9548] sc
+78.349091 90.36 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.9294 0.9592 0.9874] sc
+/DeviceRGB {} cs
+[0.9294 0.9592 0.9874] sc
+90.523636 90.36 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.1605 0.4742 0.7258] sc
+/DeviceRGB {} cs
+[0.1605 0.4742 0.7258] sc
+102.698182 90.36 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.9686 0.9843 1] sc
+/DeviceRGB {} cs
+[0.9686 0.9843 1] sc
+114.872727 90.36 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.8292 0.894 0.9548] sc
+/DeviceRGB {} cs
+[0.8292 0.894 0.9548] sc
+127.047273 90.36 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.381 0.656 0.8241] sc
+/DeviceRGB {} cs
+[0.381 0.656 0.8241] sc
+139.221818 90.36 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.291 0.5945 0.789] sc
+/DeviceRGB {} cs
+[0.291 0.5945 0.789] sc
+151.396364 90.36 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.1812 0.4949 0.7365] sc
+/DeviceRGB {} cs
+[0.1812 0.4949 0.7365] sc
+163.570909 90.36 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.1216 0.4331 0.702] sc
+/DeviceRGB {} cs
+[0.1216 0.4331 0.702] sc
+175.745455 90.36 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.7388 0.8428 0.9241] sc
+/DeviceRGB {} cs
+[0.7388 0.8428 0.9241] sc
+187.92 90.36 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+200.094545 90.36 12.174546 18.12 re
+f
+212.269091 90.36 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.3424 0.6296 0.8091] sc
+/DeviceRGB {} cs
+[0.3424 0.6296 0.8091] sc
+224.443636 90.36 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.9686 0.9843 1] sc
+/DeviceRGB {} cs
+[0.9686 0.9843 1] sc
+236.618182 90.36 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.0745 0.3728 0.6549] sc
+/DeviceRGB {} cs
+[0.0745 0.3728 0.6549] sc
+248.792727 90.36 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.2652 0.5769 0.779] sc
+/DeviceRGB {} cs
+[0.2652 0.5769 0.779] sc
+260.967273 90.36 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.1501 0.4638 0.7205] sc
+/DeviceRGB {} cs
+[0.1501 0.4638 0.7205] sc
+273.141818 90.36 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.5956 0.779 0.8772] sc
+/DeviceRGB {} cs
+[0.5956 0.779 0.8772] sc
+285.316364 90.36 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.8745 0.9241 0.9699] sc
+/DeviceRGB {} cs
+[0.8745 0.9241 0.9699] sc
+297.490909 90.36 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+309.665455 90.36 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.2536 0.5674 0.7738] sc
+/DeviceRGB {} cs
+[0.2536 0.5674 0.7738] sc
+54 72.24 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.0588 0.3528 0.6392] sc
+/DeviceRGB {} cs
+[0.0588 0.3528 0.6392] sc
+66.174545 72.24 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.9686 0.9843 1] sc
+/DeviceRGB {} cs
+[0.9686 0.9843 1] sc
+78.349091 72.24 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.6635 0.8108 0.8977] sc
+/DeviceRGB {} cs
+[0.6635 0.8108 0.8977] sc
+90.523636 72.24 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.7639 0.8535 0.9329] sc
+/DeviceRGB {} cs
+[0.7639 0.8535 0.9329] sc
+102.698182 72.24 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.5476 0.7526 0.8668] sc
+/DeviceRGB {} cs
+[0.5476 0.7526 0.8668] sc
+114.872727 72.24 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.651 0.8055 0.8933] sc
+/DeviceRGB {} cs
+[0.651 0.8055 0.8933] sc
+127.047273 72.24 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.24 0.4965] sc
+/DeviceRGB {} cs
+[0.0314 0.24 0.4965] sc
+139.221818 72.24 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.1294 0.4431 0.7098] sc
+/DeviceRGB {} cs
+[0.1294 0.4431 0.7098] sc
+151.396364 72.24 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.5636 0.7614 0.8703] sc
+/DeviceRGB {} cs
+[0.5636 0.7614 0.8703] sc
+163.570909 72.24 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.1915 0.5052 0.7418] sc
+/DeviceRGB {} cs
+[0.1915 0.5052 0.7418] sc
+175.745455 72.24 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.3939 0.6648 0.8292] sc
+/DeviceRGB {} cs
+[0.3939 0.6648 0.8292] sc
+187.92 72.24 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.1398 0.4535 0.7151] sc
+/DeviceRGB {} cs
+[0.1398 0.4535 0.7151] sc
+200.094545 72.24 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.9451 0.9693 0.9925] sc
+/DeviceRGB {} cs
+[0.9451 0.9693 0.9925] sc
+212.269091 72.24 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.2918 0.5733] sc
+/DeviceRGB {} cs
+[0.0314 0.2918 0.5733] sc
+224.443636 72.24 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.4196 0.6823 0.8392] sc
+/DeviceRGB {} cs
+[0.4196 0.6823 0.8392] sc
+236.618182 72.24 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.0824 0.3829 0.6627] sc
+/DeviceRGB {} cs
+[0.0824 0.3829 0.6627] sc
+248.792727 72.24 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.1216 0.4331 0.702] sc
+/DeviceRGB {} cs
+[0.1216 0.4331 0.702] sc
+260.967273 72.24 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+273.141818 72.24 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.8593 0.914 0.9649] sc
+/DeviceRGB {} cs
+[0.8593 0.914 0.9649] sc
+285.316364 72.24 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+297.490909 72.24 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.2019 0.5156 0.7471] sc
+/DeviceRGB {} cs
+[0.2019 0.5156 0.7471] sc
+309.665455 72.24 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.9059 0.9442 0.9799] sc
+/DeviceRGB {} cs
+[0.9059 0.9442 0.9799] sc
+54 54.12 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.8442 0.904 0.9598] sc
+/DeviceRGB {} cs
+[0.8442 0.904 0.9598] sc
+66.174545 54.12 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.9686 0.9843 1] sc
+/DeviceRGB {} cs
+[0.9686 0.9843 1] sc
+78.349091 54.12 12.174545 18.12 re
+f
+90.523636 54.12 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.9529 0.9743 0.995] sc
+/DeviceRGB {} cs
+[0.9529 0.9743 0.995] sc
+102.698182 54.12 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.9686 0.9843 1] sc
+/DeviceRGB {} cs
+[0.9686 0.9843 1] sc
+114.872727 54.12 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.6116 0.7878 0.8806] sc
+/DeviceRGB {} cs
+[0.6116 0.7878 0.8806] sc
+127.047273 54.12 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.898 0.9391 0.9774] sc
+/DeviceRGB {} cs
+[0.898 0.9391 0.9774] sc
+139.221818 54.12 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.3939 0.6648 0.8292] sc
+/DeviceRGB {} cs
+[0.3939 0.6648 0.8292] sc
+151.396364 54.12 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.5156 0.735 0.8599] sc
+/DeviceRGB {} cs
+[0.5156 0.735 0.8599] sc
+163.570909 54.12 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.8823 0.9291 0.9724] sc
+/DeviceRGB {} cs
+[0.8823 0.9291 0.9724] sc
+175.745455 54.12 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.098 0.403 0.6784] sc
+/DeviceRGB {} cs
+[0.098 0.403 0.6784] sc
+187.92 54.12 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.5316 0.7438 0.8634] sc
+/DeviceRGB {} cs
+[0.5316 0.7438 0.8634] sc
+200.094545 54.12 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.8292 0.894 0.9548] sc
+/DeviceRGB {} cs
+[0.8292 0.894 0.9548] sc
+212.269091 54.12 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.2814 0.558] sc
+/DeviceRGB {} cs
+[0.0314 0.2814 0.558] sc
+224.443636 54.12 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.9372 0.9642 0.99] sc
+/DeviceRGB {} cs
+[0.9372 0.9642 0.99] sc
+236.618182 54.12 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.0745 0.3728 0.6549] sc
+/DeviceRGB {} cs
+[0.0745 0.3728 0.6549] sc
+248.792727 54.12 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.7991 0.8739 0.9448] sc
+/DeviceRGB {} cs
+[0.7991 0.8739 0.9448] sc
+260.967273 54.12 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.8593 0.914 0.9649] sc
+/DeviceRGB {} cs
+[0.8593 0.914 0.9649] sc
+273.141818 54.12 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.8745 0.9241 0.9699] sc
+/DeviceRGB {} cs
+[0.8745 0.9241 0.9699] sc
+285.316364 54.12 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+/DeviceRGB {} cs
+[0.0314 0.1882 0.4196] sc
+297.490909 54.12 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.2433 0.557 0.7685] sc
+/DeviceRGB {} cs
+[0.2433 0.557 0.7685] sc
+309.665455 54.12 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.9137 0.9492 0.9824] sc
+/DeviceRGB {} cs
+[0.9137 0.9492 0.9824] sc
+54 36 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.9686 0.9843 1] sc
+/DeviceRGB {} cs
+[0.9686 0.9843 1] sc
+66.174545 36 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.5796 0.7702 0.8737] sc
+/DeviceRGB {} cs
+[0.5796 0.7702 0.8737] sc
+78.349091 36 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.6116 0.7878 0.8806] sc
+/DeviceRGB {} cs
+[0.6116 0.7878 0.8806] sc
+90.523636 36 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.9372 0.9642 0.99] sc
+/DeviceRGB {} cs
+[0.9372 0.9642 0.99] sc
+102.698182 36 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.9686 0.9843 1] sc
+/DeviceRGB {} cs
+[0.9686 0.9843 1] sc
+114.872727 36 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.784 0.8638 0.9398] sc
+/DeviceRGB {} cs
+[0.784 0.8638 0.9398] sc
+127.047273 36 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.9372 0.9642 0.99] sc
+/DeviceRGB {} cs
+[0.9372 0.9642 0.99] sc
+139.221818 36 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.9686 0.9843 1] sc
+/DeviceRGB {} cs
+[0.9686 0.9843 1] sc
+151.396364 36 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.9294 0.9592 0.9874] sc
+/DeviceRGB {} cs
+[0.9294 0.9592 0.9874] sc
+163.570909 36 12.174546 18.12 re
+f
+175.745455 36 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.5156 0.735 0.8599] sc
+/DeviceRGB {} cs
+[0.5156 0.735 0.8599] sc
+187.92 36 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.8902 0.9341 0.9749] sc
+/DeviceRGB {} cs
+[0.8902 0.9341 0.9749] sc
+200.094545 36 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.7514 0.8481 0.9285] sc
+/DeviceRGB {} cs
+[0.7514 0.8481 0.9285] sc
+212.269091 36 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.0314 0.3125 0.6041] sc
+/DeviceRGB {} cs
+[0.0314 0.3125 0.6041] sc
+224.443636 36 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.6259 0.7948 0.8845] sc
+/DeviceRGB {} cs
+[0.6259 0.7948 0.8845] sc
+236.618182 36 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.8668 0.9191 0.9674] sc
+/DeviceRGB {} cs
+[0.8668 0.9191 0.9674] sc
+248.792727 36 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.4676 0.7087 0.8496] sc
+/DeviceRGB {} cs
+[0.4676 0.7087 0.8496] sc
+260.967273 36 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.9372 0.9642 0.99] sc
+/DeviceRGB {} cs
+[0.9372 0.9642 0.99] sc
+273.141818 36 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.4676 0.7087 0.8496] sc
+/DeviceRGB {} cs
+[0.4676 0.7087 0.8496] sc
+285.316364 36 12.174545 18.12 re
+f
+/DeviceRGB {} cs
+[0.8066 0.8789 0.9473] sc
+/DeviceRGB {} cs
+[0.8066 0.8789 0.9473] sc
+297.490909 36 12.174546 18.12 re
+f
+/DeviceRGB {} cs
+[0.1137 0.423 0.6941] sc
+/DeviceRGB {} cs
+[0.1137 0.423 0.6941] sc
+309.665455 36 12.174545 18.12 re
+f
+Q
+q
+338.58 36 10.872 217.44 re
+W
+/DeviceGray {} cs
+[1] sc
+0 j
+0.01 w
+[] 0 d
+/DeviceGray {} CS
+[1] SC
+/DeviceGray {} cs
+[1] sc
+338.58 36 m
+338.58 38.152871 l
+338.58 251.287129 l
+338.58 253.44 l
+349.452 253.44 l
+349.452 251.287129 l
+349.452 38.152871 l
+349.452 36 l
+338.58 36 l
+h
+f
+338.58 36 m
+338.58 38.152871 l
+338.58 251.287129 l
+338.58 253.44 l
+349.452 253.44 l
+349.452 251.287129 l
+349.452 38.152871 l
+349.452 36 l
+338.58 36 l
+h
+S
+Q
+q
+0.8 w
+349.452 36 m
+352.952 36 l
+f
+349.452 36 m
+352.952 36 l
+S
+1 w
+[1 0 0 1 0 0] Tm
+0 0 Td
+356.452 32.421875 Td
+/F15_0 10 Tf
+(0.0)
+[5.56
+0
+2.78
+0
+5.56
+0] Tj3
+0.8 w
+349.452 79.535889 m
+352.952 79.535889 l
+f
+349.452 79.535889 m
+352.952 79.535889 l
+S
+1 w
+[1 0 0 1 0 0] Tm
+0 0 Td
+356.452 75.957764 Td
+/F15_0 10 Tf
+(0.2)
+[5.56
+0
+2.78
+0
+5.56
+0] Tj3
+0.8 w
+349.452 123.071779 m
+352.952 123.071779 l
+f
+349.452 123.071779 m
+352.952 123.071779 l
+S
+1 w
+[1 0 0 1 0 0] Tm
+0 0 Td
+356.452 119.493654 Td
+/F15_0 10 Tf
+(0.4)
+[5.56
+0
+2.78
+0
+5.56
+0] Tj3
+0.8 w
+349.452 166.607668 m
+352.952 166.607668 l
+f
+349.452 166.607668 m
+352.952 166.607668 l
+S
+1 w
+[1 0 0 1 0 0] Tm
+0 0 Td
+356.452 163.029543 Td
+/F15_0 10 Tf
+(0.6)
+[5.56
+0
+2.78
+0
+5.56
+0] Tj3
+0.8 w
+349.452 210.143558 m
+352.952 210.143558 l
+f
+349.452 210.143558 m
+352.952 210.143558 l
+S
+1 w
+[1 0 0 1 0 0] Tm
+0 0 Td
+356.452 206.565433 Td
+/F15_0 10 Tf
+(0.8)
+[5.56
+0
+2.78
+0
+5.56
+0] Tj3
+0.8 w
+349.452 253.679447 m
+352.952 253.679447 l
+f
+349.452 253.679447 m
+352.952 253.679447 l
+S
+1 w
+[1 0 0 1 0 0] Tm
+0 0 Td
+356.452 250.101322 Td
+/F15_0 10 Tf
+(1.0)
+[5.56
+0
+2.78
+0
+5.56
+0] Tj3
+[1 0 0 1 0 0] Tm
+0 0 Td
+[0 1 -1 0 381.5145 121.37625] Tm
+0 0 Td
+0 0 Td
+/F15_0 10 Tf
+(Probability)
+[6.67
+0
+3.33
+0
+5.56
+0
+5.56
+0
+5.56
+0
+5.56
+0
+2.22
+0
+2.22
+0
+2.22
+0
+2.78
+0
+5
+0] Tj3
+/DeviceGray {} CS
+[0] SC
+/DeviceRGB {} cs
+[0 0 0] sc
+q
+[10 0 0 217 339 36] cm
+/DeviceRGB setcolorspace
+<<
+  /ImageType 1
+  /Width 10
+  /Height 217
+  /ImageMatrix [10 0 0 -217 0 217]
+  /BitsPerComponent 8
+  /Decode [0 1 0 1 0 1]
+  /DataSource currentfile
+    /ASCII85Decode filter
+    /LZWDecode filter
+>>
+pdfIm
+J3De.p_4>G"b]2#:hXAd)[hEh?uK,qqC*2;`T'g_jC17kO2kcD331<nrf]r"nsO$k
+>q247Ahs1HenI(2c=Tig]CpM6T$QV")C5HE6_i%C'Y3PCm/3b\.J4UU:9@Eq<GOI<
+eTRPOHG;!H.h.N`A[GSl<dS,Lfl+++hJ^#kdcYbc?11j1jlZGe^L1qsQ]pkEL;Mp>
+=I`tJ*K.tuEZ$tiS`9LhAhs1Pk&3DOct@G\r>(_Pj`eF])Qcc<?*2ap2Hp'Na(`$;
+DK`Y*UQ+()hf(OP*[_JX_W5]^4FU?jIc5Ia3ZTi6:T`16FZWlXhe0LWkdTB/Ii"<h
+jn*is?>jJSg["T]Hu7J6hs'k2rVp5skMuL=^[LLi!PYGadX+7+6k9F:OB`e064drX
+#Js<=%W%[@X>(/O0\ef$`":uu&&`Gr8JB%i9M6,=L:PTU`R0?G(rh].D&GhUXE,?$
+;=%V(S>W06+\4@.N?ZIW,aBUrE_MlKa<m=rH-0$\V^fk&]X97_P0CNibL6lsBcLcU
+aYQVs4Ol:5P=44ac1>c13R"@O_Keo*`:#h7PMH+":_W3u5L<@\mUmLEPn?G^1gM+k
+dM-7=8()L=.8/&8@D7!8<96&6e.hjM:K3Sg92X3h9i4p?okdB6)omY@=]RDND-GO+
+V0-"oFj52=eg<\mGZ[umLLSpP4dBM[Q;*i[g").;@iK'/WG>\G]sV\2QGpOSg\1$N
+ES@9-[!,d,7F-)3QX/Ei?5IJ=GMZE'c<qRrD=N$]2r4F]i"tMZJ)GP]$%q+]iN@?4
+=CrA(iY[+jLLQX2.uE9<c5'ZRa'LceA%;M,OQ;f69p+N4/l@nq=`.0)jTVofFQQ`'
+B:A!$^3,oXREg/MkLpDX=ditmM5+aq5*_r.RRWjEl2#:kWT^10U3#VR`ilK0Rbk`[
+C`;`ZYO#IGY#ZGG2USpL4'paOmMfd"\*eU'l+?=/8Y0tk>NY[on/MB2^Mo\R$c2>f
+:A.U(V^EA&EP-cIaRYjV/]mS]Y;+;n>jjJpo*$#!EV*Na8(.&N5?60TSPNJ?p"bZu
+:`3m^C"mgE^NJ?+S]?07p\jQ3iV')+P&U3Q7uua,SmS&MH6.""kPAMgN_C;Q#I3ZC
+52X'Ar#Y%?n,.YGan,BTTnmXc?YA!arZ?XOpO8`qlhUP;cdkW(7ec]XTBlN-:^-td
+#Rpdl49^9I/cLRBJ2^kX&:s=?$:-X'"JE[JK.pU@6.e1&i7oK.66KVEa@Q]3/16-J
+VA;LS>mfP</VXh^&r88c2W;#&L@F=H6b%OSU'*W80`E4`=Df5"aP)I_.O;sBSJ,Ic
+9Su\2.E*.'(#hc2(?9-]7EDqS@g$.t;0jue(s<cV1hhkVgff])fc-]&DiR]73_'JC
+*94\SNtLe<LG<<t,P6MInchEO3=R+,7"paY*^rWQ)'e3IOc_rB=:KO)-)@W/P>Z!f
+8VoSWjSYR5&roS=Z!9/_1oQZ0VH-=">q2\(Xd1`V=\Dmm)?jO!QP/RgbIN$SAd#c6
+;Z:+K)2U*0aCH#Q:1[,@QSW6,c^IcnC/#SH2!20uR:1bIN@DCsVX331;hf<f$-bHm
+4QW+IY&8sP8i11&n=B0jH;?Qg4K$-jT/5>P:YFS?`>Hsp'FKB;3XnAg70K;`*eht0
+)+3V1&YZR,L';Q`1T7\uU@`&X;7\n[W<F<<1k(Qb=tUNmnBIdDWg(rC>t\mc/>cC\
+RF<'g:$G2G'8&'2;p';[C'?i#<;N=g)N.GW2+a]S1eeCYR8^,&:T@DaW`9D.<9h.s
+WtfNLKV:(TC@tu8onKbQ3mCd-7:iSYT!_VQ^(J;^aK?9#\CWe/?#.E$Y>sGmf:)MB
+lh,h4[LU"S5pe>Q22JL1-H90"*Fc+(NNtH+a]VgX&4D>nZPI<"ft0C[D$?H:<drHM
+)bFc1a?C3R'%L1/=)2Z,YI7KCg05M3D!eX@[:&>iN&u<'XmNm5<sIYh$]T,n4iOrJ
+0&D5C&hn3Gd(/m?l<QKRFKWU5]/O'`?/(q[KJ:3S(Q._=43`%h7HD-`T(Us0fmE/n
+1D"$pq-QeXI;d+!^K9.g?^pqAn+Hdt(_6T(>Pnmt#ee%k.g4eC*J8<c%)Q+2$/ljQ
+L%%Vc&&RoI@E^ZcE<[N'=F1Zi*(u+X2CZOOYW`Gr=c9P&0?.,7)Ij1mN:FV>`u+7\
+JroOUEV;Z<q$/*S4H5H.7RbEZ+!kIQIL1Y2\B5[^.-3RnQ#alDb?81(jd`lJnq\P$
+K%i"l9ZNQB7VBtKRl4lKgR@_WER#HJ2s4H$#XaEUcPc%2kIgbcF9[->=oUeO*=8G2
+a<(l.cUDNl(Sc),O4%2n8nf:rV"D*`d9q&S$QV7*[-jR9>)-!j%8Eeo5,HdJY>0YQ
+dOY!6YgrTj>&-9<XL6'Uf/hepCY`;$6TD4#)[g'?4cQ^i7`<ta+(af0RBuSm(CYo!
+Bl-SB[<BRAgKRm"D4S;Ip@dJ!?rSifS]SFO0'D%pVfls;h7E?0mG8f.H#I!K^%[$j
+$f[e,DpA$kGR"3+>Pj"k*XfdY2[SAL6nX@')8it&&)phaMK'+X`;%(^iuDulJFKoo
+q"Gokr.gGU5#',/7j[7ZT9XHR4p,K-0GHXmRWBNebk]"2k8`r]F5Ct,J65ebr<K%g
+/rA!P2bE5H0;N^8Q.(&763/6#:A$fOeN10BlQ'oEp"m+.]'!Ge?&,_/%aEV@5Yr,"
+VmZ6$g"ZCJEUCHc\9C^0h0[1[$)1N)GJ<t3484<q*Y6$\?NoE$-\q4tn0JA`&`\7g
+Nq+5eaa%5<jnu$Do%n$)Gi4Z.J4H7(5(h7/?V0M\+0"nhX42I1?0D><M?+d=g&!F:
+mJXN)p:g"NHd?j'IL!.a65TiQ5E#%q2p(k;0B;ufQ1M_&ch^u[+:'Y5omX[,q]BbD
+IG_C*ro`5:hhUcO5L&u<8)X]HquhJ`g\X3ZnbsWVp]"U^rP,9)s'MuI#-\[=YQ"RK
+!<@'B!3cP*n-K+,%08.#!H9%[:a#kD,6@9[!jF*Tn0\;l/H\g(")pC*YX&AQ70E$=
++<U~>
+%-EOD-
+Q
+0 j
+0 w
+[] 0 d
+/DeviceGray {} CS
+[0.8] SC
+Q
+Q
+showpage
+%%PageTrailer
+pdfEndPage
+end
+%%Trailer
+%%DocumentSuppliedResources:
+%%+ font T3_15_0
+%%EOF

@@ -1,0 +1,82 @@
+\documentclass[12pt,lineno]{gsajnl}
+% Use the documentclass option 'lineno' to view line numbers
+
+\articletype{inv} % article type
+
+\usepackage{verbatim}
+\usepackage{subcaption}
+
+\usepackage[labelfont=bf,textfont=bf]{caption}  %Table title bold
+\makeatletter          %To make tables sans serif
+\renewenvironment{table}%
+  {\renewcommand\familydefault\sfdefault
+   \@float{table}}
+  {\end@float}
+\makeatother
+
+\usepackage{textcomp}
+\usepackage{nameref}
+\renewcommand{\textrightarrow}{$\rightarrow$}
+
+% supplementary
+%%% HELPER CODE FOR DEALING WITH EXTERNAL REFERENCES
+\usepackage{xr}
+\makeatletter
+\newcommand*{\addFileDependency}[1]{% argument=file name and extension
+  \typeout{(#1)}% latexmk will find this if $recorder=0 (however, in that case, it will ignore #1 if it is a .aux or .pdf file etc and it exists! if it doesn't exist, it will appear in the list of dependents regardless)
+  \@addtofilelist{#1}% if you want it to appear in \listfiles, not really necessary and latexmk doesn't use this
+  \IfFileExists{#1}{}{\typeout{No file #1.}}% latexmk will find this message if #1 doesn't exist (yet)
+}
+\makeatother
+
+\newcommand*{\myexternaldocument}[1]{%
+    \externaldocument{#1}%
+    \addFileDependency{#1.tex}%
+    \addFileDependency{#1.aux}%
+}
+%%% END HELPER CODE
+% put all the external documents here!
+\myexternaldocument{supplementary}
+
+\title{Quantifying influences on intragenomic mutation rate}
+
+\author[$\ast$]{Helmut Simon}
+\author[$\ast$]{Gavin Huttley}
+
+\affil[$\ast$]{Research School of Biology, the Australian National University}
+
+\keywords{variance in mutation rate; context dependent mutation; ARMA models}
+
+\runningtitle{Influences on intragenomic mutation rate} 
+% For use in the footer 
+
+\runningauthor{Simon and Huttley}
+
+\begin{abstract}
+\include{MS-Abstract}
+\end{abstract}
+
+% TODO convert all pdf's to eps using xpdf, pdf2eps tool http://www.foolabs.com/xpdf/download.html
+% DONE update all zenodo records to latest versions of code and data, add new reference numbers in Methods
+% DONE create a new zenodo record for the supplementary material
+
+\begin{document}
+
+\maketitle
+\thispagestyle{firststyle}
+\marginmark
+\firstpagefootnote
+
+\correspondingauthoraffiliation{3}{Research School of Biology, The Australian National University, Canberra, ACT 2601, Australia. E-mail: helmut.simon@anu.edu.au; and gavin.huttley@anu.edu.au}
+\vspace{-33pt}% Only used for adjusting extra space in the left column of the first page
+
+\input{MS-Introduction.tex}
+\input{MS-Methods}
+\input{MS-Results.tex}
+\input{MS-Discussion.tex}
+\section*{Acknowledgment}
+This research is supported by an Australian Government Research Training Program (RTP) Scholarship to HS.
+
+\bibliography{mutvar.bib}
+
+\end{document}
